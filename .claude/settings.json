@@ -1,0 +1,50 @@
+{
+  "hooks": {
+    "SessionStart": [{
+      "hooks": [{
+        "type": "command",
+        "command": "echo '════════════════════════════════' && echo '🚀 SESSION START — psicoeduca' && echo '📅 HOY ES: '$(date '+%A %d/%m/%Y %H:%M') && echo '🌿 Branch: '$(git branch --show-current 2>/dev/null || echo 'sin git') && git status --short 2>/dev/null | head -10 && echo '' && echo '📋 ULTIMO HANDOFF:' && cat .claude/handoff.md 2>/dev/null || echo 'Sin handoff previo' && echo '' && echo '📊 PROGRESO:' && cat memory/progreso.md 2>/dev/null && echo '' && echo '⚠️ ULTIMOS ERRORES:' && tail -15 memory/errores-aprendidos.md 2>/dev/null && echo '════════════════════════════════'"
+      }]
+    }],
+    "SessionEnd": [{
+      "hooks": [{
+        "type": "command",
+        "command": "echo '## 🌙 Sesion cerrada: '$(date '+%d/%m/%Y %H:%M') >> memory/progreso.md && cp .claude/handoff.md \".claude/handoffs/handoff_$(date +%Y%m%d_%H%M).md\" 2>/dev/null && echo '✅ Sesion archivada'"
+      }]
+    }],
+    "PostToolUse": [{
+      "matcher": "Write|Edit",
+      "hooks": [{
+        "type": "command",
+        "command": "echo '💾 archivo guardado'"
+      }]
+    }],
+    "Stop": [{
+      "hooks": [{
+        "type": "command",
+        "command": "echo '💡 Si hubo algun error, ejecuta /nuevo-error para registrarlo.'"
+      }]
+    }]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(node *)",
+      "Bash(npm *)",
+      "Bash(echo *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(find *)",
+      "Bash(tail *)",
+      "Bash(head *)",
+      "Bash(source *)",
+      "Bash(date *)",
+      "Bash(tree *)"
+    ]
+  }
+}

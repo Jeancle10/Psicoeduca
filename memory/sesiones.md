@@ -5,3 +5,4 @@
 
 | Nombre | Codigo (sessionId) | Fecha | Que se hizo |
 |--------|--------------------|-------|-------------|
+| *(elegir nombre)* | 3541231a-a7fa-408e-8459-b36306103d56 | 2026-06-01 | Limpieza Windows, DISM+SFC, instalación Python+Node+Claude CLI |

@@ -1,28 +1,28 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 01/06/2026 (tarde, 17:14)
-## Estado actual: sistema de presentaciones operativo ✅
+## Ultima sesion: 01/06/2026 (tarde, 17:40)
+## Estado actual: 2 presentaciones con nueva identidad visual ✅
 
 ## ✅ Completado
 - Estructura de carpetas creada
 - Sistema de memoria configurado
-- Acceso rápido en VS Code configurado
-- Limpieza profunda de Windows (2.5 GB liberados, arranque optimizado)
-- Reparación del sistema (DISM + SFC — había corrupción, ya reparada)
-- Python 3.12.10 + Node.js 24.16.0 + Claude Code CLI 2.1.159 instalados
-- Extensión Python de Microsoft instalada en VS Code
-- python-pptx instalado
-- Máquina APTA para Nivel 1 (Claude Code + agentes IA)
-- Sistema de estilo maestro para presentaciones (memory/estilo-presentaciones.md)
-- Presentación: Análisis Funcional de la Conducta — 24 slides, caso Marge Simpson
-- Presentación: Bases Filosóficas del AC — 20 slides, caso Homero Simpson
+- Limpieza profunda de Windows + reparación del sistema
+- Python 3.12.10 + Node.js + Claude Code CLI + numpy instalados
+- Extensión Python + python-pptx instalados
+- Máquina APTA para Nivel 1
+- Presentación AF: 24 slides, caso Marge Simpson (estilo crema anterior)
+- Presentación Bases Filosóficas: 17 slides, caso Homero Simpson, NUEVA identidad visual
+  - Paleta Rebranding: #1E3A5F, #F2EDE4, #E8A835, #4ABFB0
+  - Logos transparentes del Rebranding (claro/oscuro sin fondo)
+  - Fondos alternados dark/crema
 
 ## 🔄 En progreso
-- Jean revisando las 2 presentaciones generadas — pendiente feedback
+- Jean revisando presentacion-bases-filosoficas.pptx (nueva identidad) — pendiente feedback
+- estilo-presentaciones.md aún refleja paleta antigua
 
 ## ⏳ Pendiente
-- Correcciones a presentaciones según feedback de Jean
-- Definir identidad de marca (nombre visual, colores, propuesta de valor)
-- Desinstalar Avast Update Helper (residuo, sin urgencia)
+- Aplicar nueva identidad Rebranding a presentacion-AF.pptx
+- Actualizar memory/estilo-presentaciones.md con nueva paleta
+- Desinstalar Avast Update Helper (sin urgencia)
 - Considerar upgrade a Windows 11 a largo plazo
 
 ## 🧠 Decisiones tomadas

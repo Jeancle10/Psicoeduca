@@ -12,41 +12,41 @@ Solo adaptar el **contenido** — el diseño es fijo.
 
 ---
 
-## 1. IDENTIDAD VISUAL
+## 1. IDENTIDAD VISUAL  *(Rebranding — versión activa)*
 
 ### Colores (valores exactos)
 | Uso | Hex | RGB |
 |-----|-----|-----|
-| Fondo de todos los slides | `#E8E3D8` | (232, 227, 216) |
-| Acento principal (navy) | `#1B3A5C` | (27, 58, 92) |
-| Texto principal | `#1A1A1A` | (26, 26, 26) |
-| Texto secundario / notas | `#666666` | (102, 102, 102) |
-| Líneas sutiles | `#CCC8C0` | (204, 200, 192) |
-| Fondo de cajas | `#D8D2C5` | (216, 210, 197) |
-| Acento azul (segunda columna) | `#2E76A0` | (46, 118, 160) |
-| Blanco | `#FFFFFF` | (255, 255, 255) |
+| Fondo dark (portadas, bloques, cierre) | `#1E3A5F` | (30, 58, 95) |
+| Fondo crema (slides de contenido) | `#F2EDE4` | (242, 237, 228) |
+| Azul PSE medio | `#2B5EA7` | (43, 94, 167) |
+| Azul cielo | `#4A9FE0` | (74, 159, 224) |
+| Naranja (acento / palabras clave) | `#E8A835` | (232, 168, 53) |
+| Verde agua (acento / palabras clave) | `#4ABFB0` | (74, 191, 176) |
+| Texto sobre fondo dark | `#F5F0DC` | (245, 240, 220) |
+| Texto sobre fondo crema | `#1E3A5F` | (30, 58, 95) |
 | Rojo (negativo) | `#CC3333` | (204, 51, 51) |
-| Verde (positivo) | `#227744` | (34, 119, 68) |
+| Verde (positivo) | `#228844` | (34, 136, 68) |
 
 ### Tipografía
 | Elemento | Fuente | Tamaño | Estilo |
 |---------|--------|--------|--------|
-| Título principal (portada) | Georgia | 52–58pt | Bold |
-| Títulos de slide | Georgia | 28–34pt | Bold, **centrado** |
-| Títulos de sección (portadas de bloque) | Georgia | 44–52pt | Bold, centrado |
-| Cuerpo de texto | Calibri | 16–19pt | Normal |
-| Bullets principales | Calibri | 17–19pt | Normal |
-| Texto en tablas | Calibri | 13–16pt | Header bold |
-| Texto en cajas (box) | Calibri | 15–17pt | Centrado |
-| Footer | Calibri | 11pt | Italic, gris |
-| Etiqueta superior | Calibri | 9pt | Gris |
-| Números de bloque (01, 02...) | Georgia | 20–24pt | Bold, navy |
+| Título principal (portada) | Georgia | 48–54pt | Bold |
+| Títulos de slide | Georgia | 26–32pt | Bold, left-aligned |
+| Portadas de bloque (número grande) | Georgia | 80–96pt | Bold, naranja |
+| Portadas de bloque (título) | Georgia | 36–42pt | Bold, crema |
+| Cuerpo de texto | Calibri | 14–16pt | Normal |
+| Texto en tablas | Calibri | 12–16pt | Header bold |
+| Texto en cajas (box) | Calibri | 14–16pt | Left o centrado |
+| Footer | Calibri | 10pt | Italic, gris |
+| Header módulo | Calibri | 9pt | Bold caps, navy |
+| Números de bloque decorativos | Calibri | 28–30pt | Bold, naranja |
 
-### Logo
-- Archivo: `C:\Users\MI PC\Desktop\PsicoEduca\Marketing\PsicoEduca Logo final_Mesa de trabajo 1 copia 4.png`
-- Posición: esquina superior derecha
-- Coordenadas: `x = W - 4.2cm`, `y = 0.2cm`
-- Tamaño: `3.8cm × 3.0cm`
+### Logos (Rebranding — fondo transparente)
+- **Para slides crema:** `C:\Users\MI PC\Desktop\PsicoEduca\Marketing\Rebranding\claro sin fondo.png`
+- **Para slides dark:** `C:\Users\MI PC\Desktop\PsicoEduca\Marketing\Rebranding\oscuro sin fondo.png`
+- Posición: esquina superior derecha, `x = W - 4.5cm`, `y = 0.3cm`
+- Tamaño: `4.0cm × 2.2cm`
 - Aparece en **TODOS** los slides sin excepción
 
 ---
@@ -62,36 +62,70 @@ Ancho útil:    30.27cm  (CW = W - ML - MR aprox)
 
 ---
 
-## 3. TIPOS DE SLIDE Y SU ESTRUCTURA
+## 3. TIPOS DE SLIDE Y SU ESTRUCTURA  *(Rebranding)*
 
-### A. PORTADA (slide 1)
+### Regla de alternancia de fondos
 ```
-- Fondo: #E8E3D8
-- 1 línea horizontal gruesa (Pt 2) arriba, a ~1.8cm del top (sin llegar al logo)
-- 1 línea horizontal gruesa (Pt 2) abajo, a ~17.2cm del top
-- Título grande (Georgia 52–58pt bold) a la izquierda
-- Subtítulo (Calibri 16pt) abajo del título
-- "Presentación por Lic. Jean Clemotte" (Georgia 15pt italic) al final
-- Logo arriba derecha
-- Footer abajo izquierda
+Portada DARK → Contenido CREMA → Contenido CREMA → Bloque DARK →
+Contenido CREMA → (x veces) → Ideas clave DARK → Cierre DARK
+Nunca 2 slides dark seguidos (excepto ideas clave + cierre al final)
 ```
 
-### B. SLIDE DE SECCIÓN / PORTADA DE BLOQUE (slides 4, 8, 16)
+### A. PORTADA (slide 1) — DARK
 ```
-- Fondo: #E8E3D8
-- 1 línea horizontal (Pt 0.8, navy) horizontal a mitad de slide (~8cm)
-- "Bloque 0X" (Calibri 22pt, navy, centrado) arriba de la línea
-- Título del bloque (Georgia 44–52pt bold, centrado) debajo de la línea
-- Logo arriba derecha
-- Footer abajo izquierda
+- Fondo: #1E3A5F
+- Título grande (Georgia 48–54pt bold, left-aligned) en crema
+- Línea naranja horizontal de acento (#E8A835, Pt 3) bajo el título
+- Subtítulo en azul cielo (#4A9FE0)
+- Elemento visual grande semitransparente (letras, número, símbolo)
+- Logo oscuro arriba derecha
+- Footer: crema suave
 ```
 
-### C. SLIDE DE CONTENIDO (todos los demás)
+### B. PORTADA DE BLOQUE — DARK
 ```
-Estructura fija:
-  - Fondo: #E8E3D8
-  - TOP: etiqueta "ANÁLISIS FUNCIONAL DE LA CONDUCTA" (9pt, gris, izq) + "PSICOEDUCA" (9pt, gris, der)
-  - 2 líneas finas negras arriba (~1.5cm y ~1.8cm) — dejan espacio para el logo
+- Fondo: #1E3A5F
+- Número grande (Georgia 80–96pt bold) en naranja, izquierda
+- Línea naranja horizontal de acento
+- Título (Georgia 36–42pt bold) en crema, derecha del número
+- Subtítulo pequeño en azul cielo
+- Logo oscuro arriba derecha
+```
+
+### C. SLIDE DE CONTENIDO — CREMA
+```
+- Fondo: #F2EDE4
+- Header: nombre del módulo (9pt bold caps, navy) + línea fina navy
+- Título del slide: Georgia 26–32pt bold, left-aligned, #1E3A5F
+- Área de contenido desde ~4.0–4.5cm del top
+- Máximo 6 líneas de texto por slide
+- AL MENOS 1 elemento visual (número grande, caja, flecha, tabla, ícono)
+- Palabras clave: naranja #E8A835 o verde agua #4ABFB0 (1–2 por slide)
+- Logo crema arriba derecha
+- Footer: gris suave
+```
+
+### D. IDEAS CLAVE / CIERRE — DARK
+```
+- Fondo: #1E3A5F
+- Contenido en crema y acento naranja/verde
+- Logo oscuro arriba derecha
+- Footer: crema suave
+```
+
+### E. CIERRE CON FOTO
+```
+- Foto de Jean como fondo completo
+- Overlay semitransparente dark (#1E3A5F ~85%) en lado izquierdo
+- Líneas naranja arriba y abajo
+- Texto en crema sobre el overlay
+- Logo oscuro arriba derecha
+```
+
+### Antes (referencia histórica — NO usar):
+```
+El estilo anterior usaba fondo único crema #E8E3D8 en todos los slides.
+Fue reemplazado por el Rebranding en junio 2026.
   - Título del slide (Georgia, 28–34pt, bold, CENTRADO, navy o negro)
   - Área de contenido: empieza a ~4.0–4.5cm del top
   - 2 líneas finas negras abajo (~17.3cm y ~17.6cm)
@@ -223,8 +257,9 @@ H  = Cm(19.05)
 ML = Cm(1.8)
 CW = Cm(30.27)
 
-LOGO  = r'C:\Users\MI PC\Desktop\PsicoEduca\Marketing\PsicoEduca Logo final_Mesa de trabajo 1 copia 4.png'
-PHOTO = r'C:\Users\MI PC\Desktop\PsicoEduca\Marketing\BOOK\sentado.JPG'
+LOGO_CREMA = r'C:\Users\MI PC\Desktop\PsicoEduca\Marketing\Rebranding\claro sin fondo.png'
+LOGO_DARK  = r'C:\Users\MI PC\Desktop\PsicoEduca\Marketing\Rebranding\oscuro sin fondo.png'
+PHOTO      = r'C:\Users\MI PC\Desktop\PsicoEduca\Marketing\BOOK\sentado.JPG'
 
 prs = Presentation()
 prs.slide_width  = W
@@ -265,8 +300,10 @@ def paras(slide, lines, x, y, w, h, font=SANS, size=16, color=BLACK, align=PP_AL
             r = p.add_run(); r.text=str(ln)
             r.font.name=font; r.font.size=Pt(size); r.font.color.rgb=color
 
-def add_logo(slide):
-    slide.shapes.add_picture(LOGO, W-Cm(4.2), Cm(0.2), Cm(3.8), Cm(3.0))
+def add_logo(slide, dark=False):
+    path = LOGO_DARK if dark else LOGO_CREMA
+    try: slide.shapes.add_picture(path, W-Cm(4.5), Cm(0.3), Cm(4.0), Cm(2.2))
+    except: pass
 
 def footer(slide):
     txt(slide,'Lic. Jean Clemotte  |  @Psico_Educa20',

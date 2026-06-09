@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 01/06/2026 (tarde, 17:40)
-## Estado actual: 2 presentaciones con nueva identidad visual ✅
+## Ultima sesion: 09/06/2026 (tarde, 15:03)
+## Estado actual: Agente Skinner en construcción — Airtable conectado al 80% ⚙️
 
 ## ✅ Completado
 - Estructura de carpetas creada
@@ -14,14 +14,21 @@
   - Paleta Rebranding: #1E3A5F, #F2EDE4, #E8A835, #4ABFB0
   - Logos transparentes del Rebranding (claro/oscuro sin fondo)
   - Fondos alternados dark/crema
+- Repo `cowork-agentkit` clonado → `C:\Users\MI PC\proyectos\psicoeduca-agente`
+- Base de conocimiento del agente: `knowledge/psicoeduca-conocimiento.md` (FAQs, precios, horarios, protocolo de crisis)
+- Arquitectura Airtable en el agente: tools/airtable.py, tools/generador_turnos.py, brain.py con tool_use
+- Base Airtable creada en cuenta de Jean: `PsicoEduca — Agenda` (appfPbIIS3UgNvOKC)
 
 ## 🔄 En progreso
-- Jean revisando presentacion-bases-filosoficas.pptx (nueva identidad) — pendiente feedback
-- estilo-presentaciones.md aún refleja paleta antigua
+- Base Airtable: 6/13 campos creados — faltan 7
+- Token Airtable: pendiente (necesita ambos scopes: read + write)
+- Generador de turnos: código listo, pendiente token para correr
 
 ## ⏳ Pendiente
-- Aplicar nueva identidad Rebranding a presentacion-AF.pptx
-- Actualizar memory/estilo-presentaciones.md con nueva paleta
+- Completar 7 campos faltantes en Airtable (ver handoff para lista exacta)
+- Crear token Airtable con scopes correctos y correr generador
+- Configurar prompts.yaml del agente (personalidad de Skinner)
+- Conectar WhatsApp (Meta o Twilio)
 - Desinstalar Avast Update Helper (sin urgencia)
 - Considerar upgrade a Windows 11 a largo plazo
 
@@ -30,6 +37,9 @@
 - No instalar Docker por ahora (disco justo, sin proyecto concreto)
 - Samsung printer apps: NO tocar
 - Disco externo 1 TB disponible para datos/backups
+- Agente usa Claude Haiku 4.5 (rápido y económico para WhatsApp)
+- Base Airtable en cuenta jeancle.010@gmail.com (NO via MCP — genera conflictos de auth)
+- Slots de 60 min: Mar 14-19:30, Mié/Vier 8-13, Jue 15-19:30
 
 ## 🌙 Sesion cerrada: 30/05/2026 13:31
 ## 🌙 Sesion cerrada: 30/05/2026 13:33
@@ -52,3 +62,4 @@
 ## 🌙 Sesion cerrada: 09/06/2026 10:17
 ## 🌙 Sesion cerrada: 09/06/2026 10:17
 ## 🌙 Sesion cerrada: 09/06/2026 13:22
+## 🌙 Sesion cerrada: 09/06/2026 15:03

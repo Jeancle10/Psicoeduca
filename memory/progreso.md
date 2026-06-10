@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 09/06/2026 (tarde, 15:03)
-## Estado actual: Agente Skinner en construcción — Airtable conectado al 80% ⚙️
+## Ultima sesion: 10/06/2026 (tarde, 16:20)
+## Estado actual: Agente Skinner en construcción — Agenda Airtable lista, falta token API ⚙️
 
 ## ✅ Completado
 - Estructura de carpetas creada
@@ -18,15 +18,16 @@
 - Base de conocimiento del agente: `knowledge/psicoeduca-conocimiento.md` (FAQs, precios, horarios, protocolo de crisis)
 - Arquitectura Airtable en el agente: tools/airtable.py, tools/generador_turnos.py, brain.py con tool_use
 - Base Airtable creada en cuenta de Jean: `PsicoEduca — Agenda` (appfPbIIS3UgNvOKC)
+- Tabla "Turnos": 13/13 campos completos
+- 63 turnos generados para las próximas 2 semanas (11/06 al 01/07/2026), todos "Disponible"
 
 ## 🔄 En progreso
-- Base Airtable: 6/13 campos creados — faltan 7
-- Token Airtable: pendiente (necesita ambos scopes: read + write)
-- Generador de turnos: código listo, pendiente token para correr
+- Token Airtable (PAT) para `.env`: 4 tokens probados, todos 403 Forbidden — posible cuenta Airtable duplicada (ver errores-aprendidos.md)
+- Generador de turnos: código listo, sigue bloqueado por el token
 
 ## ⏳ Pendiente
-- Completar 7 campos faltantes en Airtable (ver handoff para lista exacta)
-- Crear token Airtable con scopes correctos y correr generador
+- Resolver el problema de cuenta duplicada de Airtable y conseguir un PAT funcional (ver handoff para pasos)
+- Correr `python -m agent.tools.generador_turnos --semanas 2` una vez resuelto el token (validación)
 - Configurar prompts.yaml del agente (personalidad de Skinner)
 - Conectar WhatsApp (Meta o Twilio)
 - Desinstalar Avast Update Helper (sin urgencia)
@@ -63,3 +64,6 @@
 ## 🌙 Sesion cerrada: 09/06/2026 10:17
 ## 🌙 Sesion cerrada: 09/06/2026 13:22
 ## 🌙 Sesion cerrada: 09/06/2026 15:03
+## 🌙 Sesion cerrada: 09/06/2026 15:06
+## 🌙 Sesion cerrada: 10/06/2026 15:02
+## 🌙 Sesion cerrada: 10/06/2026 15:02

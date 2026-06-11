@@ -1,1 +1,655 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsicoEduca - Psicología Clínica ACT DBT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        /* COLORES MARCA */
+        :root {
+            --azul-marino: #1a3a52;
+            --azul-medio: #2c5aa0;
+            --crema: #f5f1eb;
+            --naranja: #ff8c42;
+            --verde-agua: #4fb3d9;
+        }
+        
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-medio) 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 15px;
+            color: var(--verde-agua);
+            font-weight: 500;
+            margin: 8px 0;
+        }
+        
+        nav {
+            background: var(--crema);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            overflow-x: auto;
+        }
+        
+        nav a {
+            color: var(--azul-marino);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.3s, border-bottom 0.3s;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 3px;
+            white-space: nowrap;
+        }
+        
+        nav a:hover {
+            color: var(--naranja);
+            border-bottom-color: var(--naranja);
+        }
+        
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-medio) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 35px;
+            color: var(--crema);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+        
+        .btn-primary {
+            background: var(--naranja);
+            color: white;
+            padding: 15px 45px;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            background: #e67e34;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 140, 66, 0.3);
+        }
+        
+        /* SECCIONES */
+        .section {
+            padding: 70px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            color: var(--azul-marino);
+            font-size: 36px;
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: 800;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--naranja);
+            border-radius: 2px;
+        }
+        
+        /* ACERCA DE */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            color: var(--azul-medio);
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .about-text p {
+            color: #555;
+            line-height: 1.9;
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+        
+        .about-text strong {
+            color: var(--naranja);
+        }
+        
+        .about-text ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .about-text li {
+            color: #555;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            position: relative;
+            font-size: 15px;
+        }
+        
+        .about-text li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--verde-agua);
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .about-image {
+            background: linear-gradient(135deg, var(--verde-agua) 0%, var(--azul-medio) 100%);
+            height: 350px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        /* SERVICIOS */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-bottom: 30px;
+        }
+        
+        .service-card {
+            background: var(--crema);
+            padding: 35px;
+            border-left: 5px solid var(--naranja);
+            border-radius: 8px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-card h3 {
+            color: var(--azul-marino);
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        
+        /* CURSOS */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        .course-card {
+            background: white;
+            border: 3px solid var(--azul-medio);
+            padding: 35px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--naranja);
+        }
+        
+        .course-card:hover {
+            border-color: var(--naranja);
+            box-shadow: 0 10px 30px rgba(255,140,66,0.15);
+            transform: translateY(-5px);
+        }
+        
+        .course-card h3 {
+            color: var(--naranja);
+            margin-bottom: 12px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .course-card p {
+            color: #666;
+            margin-bottom: 18px;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .course-card .price {
+            color: var(--verde-agua);
+            font-weight: 700;
+            font-size: 17px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid var(--crema);
+        }
+        
+        /* TESTIMONIOS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .testimonial-card {
+            background: var(--crema);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--verde-agua);
+        }
+        
+        .testimonial-card p {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .testimonial-author {
+            color: var(--azul-marino);
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--crema);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border-left: 4px solid var(--naranja);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--azul-marino);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: rgba(255, 140, 66, 0.1);
+        }
+        
+        .faq-question::after {
+            content: '▼';
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px 20px;
+            max-height: 500px;
+        }
+        
+        /* CONTACTO */
+        .contact-section {
+            background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-medio) 100%);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 50px 0;
+        }
+        
+        .contact-section h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .contact-section h2::after {
+            background: var(--verde-agua);
+        }
+        
+        .contact-info {
+            margin: 35px 0;
+        }
+        
+        .contact-info p {
+            font-size: 18px;
+            margin: 15px 0;
+            color: var(--crema);
+        }
+        
+        .contact-info strong {
+            color: var(--verde-agua);
+        }
+        
+        .horarios {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .horarios p {
+            font-size: 15px;
+            margin: 8px 0;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--azul-marino);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .footer-content p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .footer-content strong {
+            color: var(--verde-agua);
+        }
+        
+        @media (max-width: 768px) {
+            .about-content, .services-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            nav {
+                gap: 15px;
+            }
+            
+            .section {
+                padding: 50px 15px;
+            }
+            
+            .section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">🧠 PsicoEduca</div>
+        <div class="tagline">Psicología Clínica | ACT | DBT | Análisis Funcional</div>
+    </header>
+    
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <h1>Transformando vidas a través de la psicología clínica</h1>
+        <p>Especializado en ACT, DBT y Análisis Funcional. Acompañamiento integral para tu bienestar mental y tu crecimiento personal.</p>
+        <a href="#contacto" class="btn-primary">📱 Contactar por WhatsApp</a>
+    </section>
+    
+    <!-- ACERCA DE -->
+    <section class="section" id="acerca">
+        <h2>Acerca de mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Jean Clemotte Llanes</h3>
+                <p><strong>Psicólogo Clínico</strong> con <strong>4 años de experiencia</strong> en práctica privada especializada en terapias de tercera generación.</p>
+                <p>Mi enfoque se basa en el <strong>análisis funcional</strong> para identificar los patrones que mantienen tu sufrimiento y diseñar intervenciones efectivas y personalizadas.</p>
+                <h3 style="margin-top: 25px; margin-bottom: 15px;">Especialidades:</h3>
+                <ul>
+                    <li><strong>Terapia de Aceptación y Compromiso (ACT)</strong></li>
+                    <li><strong>Terapia Dialéctico-Conductual (DBT)</strong></li>
+                    <li><strong>Análisis Funcional aplicado</strong></li>
+                    <li>Evaluación y diagnóstico clínico</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div style="text-align: center;">
+                    <div style="font-size: 80px; margin-bottom: 10px;">📷</div>
+                    <div>Tu foto profesional aquí</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+        <h2>Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Consultas Individuales</h3>
+                <p>Atención personalizada basada en análisis funcional. <strong>Primera sesión: 300.000 Gs | Sesiones posteriores: 250.000 Gs</strong>. Duración: 50 minutos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Terapia ACT</h3>
+                <p>Terapia de Aceptación y Compromiso. Aprenderás a aceptar las emociones difíciles y a vivir de acuerdo con tus valores más importantes.</p>
+            </div>
+            <div class="service-card">
+                <h3>Terapia DBT</h3>
+                <p>Desarrollo de habilidades en regulación emocional, tolerancia al estrés, mindfulness y efectividad interpersonal.</p>
+            </div>
+            <div class="service-card">
+                <h3>Análisis Funcional</h3>
+                <p>Evaluación profunda de los factores que mantienen tu problema para diseñar un plan de intervención preciso y efectivo.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CURSOS -->
+    <section class="section" id="cursos">
+        <h2>Cursos y Talleres</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <h3>📚 Introducción al Análisis Funcional</h3>
+                <p>Aprende los fundamentos del análisis funcional aplicado a la práctica clínica. Diseñado para profesionales de la salud mental y estudiantes de psicología. Incluye análisis de casos reales y herramientas prácticas.</p>
+                <div class="price">📍 Consultar disponibilidad y arancel</div>
+            </div>
+            <div class="course-card">
+                <h3>🎯 Habilidades Clínicas Esenciales</h3>
+                <p>Desarrollo de competencias clave en entrevista clínica, conceptualización de casos, comunicación terapéutica y técnicas de evaluación. Ideal para profesionales que buscan optimizar su práctica.</p>
+                <div class="price">📍 Consultar disponibilidad y arancel</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TESTIMONIOS -->
+    <section class="section" id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"El proceso terapéutico fue transformador. Jean logró que entendiera realmente qué me estaba pasando y cómo puedo cambiar mis patrones."</p>
+                <div class="testimonial-author">— Cliente, 28 años</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Profesional muy competente. Su enfoque en el análisis funcional me ayudó a resolver problemas que arrastraba desde hace años."</p>
+                <div class="testimonial-author">— Cliente, 35 años</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">¿Cuál es la duración de una sesión?</div>
+                <div class="faq-answer">Cada sesión tiene una duración de 50 minutos. Este tiempo incluye la intervención terapéutica y la retroalimentación.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuál es tu política de cancelación?</div>
+                <div class="faq-answer">Las cancelaciones deben comunicarse con al menos 24 horas de anticipación. Si se cancela el mismo día, se cobra el 50% del arancel de la sesión.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Ofreces sesiones online?</div>
+                <div class="faq-answer">Actualmente ofrezco sesiones presenciales en mi consultorio. Contacta para consultar opciones especiales.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo programo mi primera sesión?</div>
+                <div class="faq-answer">Contacta por WhatsApp indicando tu disponibilidad. Coordinaremos la fecha y hora según mis horarios de atención (martes a viernes).</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuál es el objetivo del análisis funcional?</div>
+                <div class="faq-answer">El análisis funcional identifica las variables que mantienen tu problema, permitiendo diseñar intervenciones precisas y efectivas para tu situación específica.</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+        <div class="contact-section">
+            <h2>¿Listo para comenzar tu proceso?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px;">Contacta conmigo por WhatsApp para programar tu sesión inicial</p>
+            <div class="contact-info">
+                <p><strong>📱 WhatsApp: +595 981 003 331</strong></p>
+                <p>Línea dedicada para coordinación y automatización</p>
+            </div>
+            <div class="horarios">
+                <h3 style="margin-bottom: 15px; font-size: 18px;">Horario de atención:</h3>
+                <p><strong>Martes y Jueves:</strong> 15:00 - 19:30 hs</p>
+                <p><strong>Miércoles y Viernes:</strong> 08:00 - 13:00 hs</p>
+            </div>
+            <a href="https://wa.me/595981003331?text=Hola%20Jean%2C%20me%20gustaría%20agendar%20una%20sesión" class="btn-primary" style="margin-top: 20px;">Ir a WhatsApp</a>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 20px; font-weight: 800;">PsicoEduca</h3>
+            <p><strong>Psicología Clínica | Análisis Funcional | ACT | DBT</strong></p>
+            <p style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">📱 WhatsApp: <strong>+595 981 003 331</strong></p>
+            <p style="margin-top: 15px; font-size: 12px; color: rgba(255,255,255,0.6);">© 2026 PsicoEduca. Todos los derechos reservados. | Asunción, Paraguay</p>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ interactivo
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

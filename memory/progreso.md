@@ -1,8 +1,14 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 10/06/2026 (tarde, 16:20)
-## Estado actual: Agente Skinner en construcción — Agenda Airtable lista, falta token API ⚙️
+## Ultima sesion: 11/06/2026 (tarde, 13:16)
+## Estado actual: Agente Skinner desplegado en Railway + conectado a Meta WhatsApp — falta prueba final end-to-end ⚙️
 
 ## ✅ Completado
+- Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
+- `config/prompts.yaml` y `config/business.yaml` creados (personalidad, datos del negocio, menú de bienvenida)
+- Repo GitHub `Jeancle10/psicoeduca-agente` creado y código pusheado
+- `cowork-agentkit-nuevo` eliminado (lo útil se migró a `psicoeduca-agente`)
+- Fix: `docker-entrypoint.sh` reconstruye `config/*.yaml` (gitignored) desde variables Railway en cada arranque
+- Conexión Meta WhatsApp Cloud API: número real +595982469351 (Phone Number ID `1096140520250334`), webhook verificado, suscripción `messages` activa, token permanente `META_ACCESS_TOKEN` generado y cargado en Railway
 - Estructura de carpetas creada
 - Sistema de memoria configurado
 - Limpieza profunda de Windows + reparación del sistema
@@ -22,14 +28,11 @@
 - 63 turnos generados para las próximas 2 semanas (11/06 al 01/07/2026), todos "Disponible"
 
 ## 🔄 En progreso
-- Token Airtable (PAT) para `.env`: 4 tokens probados, todos 403 Forbidden — posible cuenta Airtable duplicada (ver errores-aprendidos.md)
-- Generador de turnos: código listo, sigue bloqueado por el token
+- Falta la prueba final end-to-end: Jean escribe por WhatsApp a +595982469351 y se confirma que Skinner responde (ver handoff para pasos exactos)
 
 ## ⏳ Pendiente
-- Resolver el problema de cuenta duplicada de Airtable y conseguir un PAT funcional (ver handoff para pasos)
-- Correr `python -m agent.tools.generador_turnos --semanas 2` una vez resuelto el token (validación)
-- Configurar prompts.yaml del agente (personalidad de Skinner)
-- Conectar WhatsApp (Meta o Twilio)
+- Confirmar prueba real de WhatsApp (Paso 7 guía Meta)
+- Decidir qué hacer con el turno de prueba `JUE-2026-06-18-1830` en Airtable (dato de prueba a nombre de Jean Clemotte)
 - Desinstalar Avast Update Helper (sin urgencia)
 - Considerar upgrade a Windows 11 a largo plazo
 
@@ -67,3 +70,7 @@
 ## 🌙 Sesion cerrada: 09/06/2026 15:06
 ## 🌙 Sesion cerrada: 10/06/2026 15:02
 ## 🌙 Sesion cerrada: 10/06/2026 15:02
+## 🌙 Sesion cerrada: 11/06/2026 09:27
+## 🌙 Sesion cerrada: 11/06/2026 09:52
+## 🌙 Sesion cerrada: 11/06/2026 11:18
+## 🌙 Sesion cerrada: 11/06/2026 13:16

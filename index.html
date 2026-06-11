@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PsicoEduca - Psicología Clínica ACT DBT</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Psicología clínica en Asunción, Paraguay. Terapia de Aceptación y Compromiso (ACT), Terapia Dialéctico-Conductual (DBT) y Análisis Funcional, modalidad virtual o presencial. Atención con Jean Clemotte Llanes, Psicólogo Clínico, Mat. Prof. N° 8589.">
+    <meta name="keywords" content="psicólogo Asunción, psicología clínica Paraguay, terapia ACT, terapia DBT, análisis funcional, terapia online Paraguay, psicoeduca">
+    <link rel="canonical" href="https://psicoeduca20.com/">
+
+    <!-- Open Graph / redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PsicoEduca - Psicología Clínica | ACT | DBT | Análisis Funcional">
+    <meta property="og:description" content="Acompañamiento psicológico virtual o presencial en Asunción, Paraguay. Terapia ACT, DBT y Análisis Funcional con Jean Clemotte Llanes, Psicólogo Clínico.">
+    <meta property="og:image" content="https://psicoeduca20.com/img/logo-icon.png">
+    <meta property="og:url" content="https://psicoeduca20.com/">
+    <meta property="og:locale" content="es_PY">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PsicoEduca - Psicología Clínica | ACT | DBT | Análisis Funcional">
+    <meta name="twitter:description" content="Acompañamiento psicológico virtual o presencial en Asunción, Paraguay. Terapia ACT, DBT y Análisis Funcional.">
+    <meta name="twitter:image" content="https://psicoeduca20.com/img/logo-icon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -40,10 +69,23 @@
         }
         
         .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
             font-size: 32px;
             font-weight: 800;
             margin-bottom: 8px;
             letter-spacing: 1px;
+        }
+
+        .logo img {
+            height: 48px;
+            width: auto;
+        }
+
+        .logo span {
+            font-family: 'Playfair Display', 'Georgia', serif;
         }
         
         .tagline {
@@ -110,11 +152,11 @@
         }
         
         .btn-primary {
-            background: var(--naranja);
+            background: var(--verde-agua);
             color: white;
             padding: 15px 45px;
             border: none;
-            border-radius: 8px;
+            border-radius: 50px;
             font-size: 17px;
             cursor: pointer;
             font-weight: 700;
@@ -122,11 +164,36 @@
             display: inline-block;
             text-decoration: none;
         }
-        
+
         .btn-primary:hover {
-            background: #e67e34;
+            background: #3a9bc1;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 140, 66, 0.3);
+            box-shadow: 0 8px 20px rgba(79, 179, 217, 0.3);
+        }
+
+        /* WHATSAPP FLOTANTE */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: var(--verde-agua);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 200;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
         
         /* SECCIONES */
@@ -458,6 +525,29 @@
         .footer-content strong {
             color: var(--verde-agua);
         }
+
+        .footer-social {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-social a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border: 2px solid var(--verde-agua);
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--verde-agua);
+            color: var(--azul-marino);
+        }
         
         @media (max-width: 768px) {
             .about-content, .services-grid, .testimonials-grid {
@@ -485,10 +575,13 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="logo">🧠 PsicoEduca</div>
-        <div class="tagline">Psicología Clínica | ACT | DBT | Análisis Funcional</div>
+        <div class="logo"><img src="img/logo-icon.png" alt="Logo PsicoEduca"> <span>PsicoEduca</span></div>
+        <div class="tagline">ACT | DBT | Análisis Funcional</div>
     </header>
     
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/595981003331?text=Hola%20Jean%2C%20me%20gustaría%20agendar%20una%20sesión" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">📱</a>
+
     <!-- NAVEGACIÓN -->
     <nav>
         <a href="#inicio">Inicio</a>
@@ -502,8 +595,8 @@
     
     <!-- HERO -->
     <section class="hero" id="inicio">
-        <h1>Transformando vidas a través de la psicología clínica</h1>
-        <p>Especializado en ACT, DBT y Análisis Funcional. Acompañamiento integral para tu bienestar mental y tu crecimiento personal.</p>
+        <h1>Enseñándote a entender tu comportamiento</h1>
+        <p>Formado en ACT, DBT y Análisis Funcional.</p>
         <a href="#contacto" class="btn-primary">📱 Contactar por WhatsApp</a>
     </section>
     
@@ -513,14 +606,13 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>Jean Clemotte Llanes</h3>
-                <p><strong>Psicólogo Clínico</strong> con <strong>4 años de experiencia</strong> en práctica privada especializada en terapias de tercera generación.</p>
-                <p>Mi enfoque se basa en el <strong>análisis funcional</strong> para identificar los patrones que mantienen tu sufrimiento y diseñar intervenciones efectivas y personalizadas.</p>
-                <h3 style="margin-top: 25px; margin-bottom: 15px;">Especialidades:</h3>
+                <p style="font-size: 13px; color: var(--azul-medio); font-weight: 700; margin-bottom: 8px;">Matrícula Profesional N° 8589</p>
+                <p>Atención clínica desde el 2022 con enfoque en terapias de tercera generación. Juntos aprenderemos habilidades para enfrentar obstáculos de maneras más efectivas, aceptar y soltar lo que no se puede cambiar y desarrollar una vida alineada con tus objetivos de vida.</p>
+                <h3 style="margin-top: 25px; margin-bottom: 15px;">Formaciones:</h3>
                 <ul>
                     <li><strong>Terapia de Aceptación y Compromiso (ACT)</strong></li>
                     <li><strong>Terapia Dialéctico-Conductual (DBT)</strong></li>
                     <li><strong>Análisis Funcional aplicado</strong></li>
-                    <li>Evaluación y diagnóstico clínico</li>
                 </ul>
             </div>
             <div class="about-image">
@@ -601,7 +693,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">¿Ofreces sesiones online?</div>
-                <div class="faq-answer">Actualmente ofrezco sesiones presenciales en mi consultorio. Contacta para consultar opciones especiales.</div>
+                <div class="faq-answer">Sí. Las sesiones pueden ser virtuales o presenciales en mi consultorio, según lo que te resulte más cómodo. Contáctame por WhatsApp y coordinamos la modalidad.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">¿Cómo programo mi primera sesión?</div>
@@ -637,7 +729,12 @@
         <div class="footer-content">
             <h3 style="margin-bottom: 20px; font-weight: 800;">PsicoEduca</h3>
             <p><strong>Psicología Clínica | Análisis Funcional | ACT | DBT</strong></p>
+            <p style="margin-top: 10px; font-size: 13px;">Mat. Prof. N° 8589</p>
             <p style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">📱 WhatsApp: <strong>+595 981 003 331</strong></p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/psico_educa20" target="_blank" rel="noopener">📷 Instagram</a>
+                <a href="https://www.tiktok.com/@psicoeducaa" target="_blank" rel="noopener">🎵 TikTok</a>
+            </div>
             <p style="margin-top: 15px; font-size: 12px; color: rgba(255,255,255,0.6);">© 2026 PsicoEduca. Todos los derechos reservados. | Asunción, Paraguay</p>
         </div>
     </footer>

@@ -11,3 +11,8 @@
 - Que paso: uno de los tokens pegados por Jean tenia el secret de 40 caracteres en vez de 64 (se cortó al copiar) y dio 401.
 - Por que: el botón de copiar/selección manual en la página del token a veces no copia el valor completo.
 - Como se resuelve: antes de probar un token nuevo, verificar que la parte despues del punto tenga 64 caracteres (`len(key.split('.')[1]) == 64`).
+
+## 11/06/2026 - `railway up` no sube archivos del .gitignore (config/prompts.yaml y config/business.yaml faltaban en producción)
+- Que paso: el deploy a Railway quedó online y respondiendo, pero Skinner usaba el prompt genérico de fallback ("Sos un asistente útil de WhatsApp...") en vez de su personalidad real, y no mandaba el menú de bienvenida.
+- Por que: `config/prompts.yaml` y `config/business.yaml` están en `.gitignore` (contienen datos del negocio, no van a git). `railway up` respeta el `.gitignore` al subir el build context, así que esos archivos nunca llegaban al contenedor. Crear un `.railwayignore` NO sirve para "rescatarlos" — railway igual los excluye.
+- Como se resuelve: se creó `docker-entrypoint.sh` que, al arrancar el contenedor, decodifica esos dos archivos desde variables de entorno de Railway (`PROMPTS_YAML_B64`, `BUSINESS_YAML_B64`, contenido en base64) y los escribe en `config/`. El `Dockerfile` usa ese entrypoint. IMPORTANTE: si se edita `config/prompts.yaml` o `config/business.yaml` en el futuro, hay que regenerar esas dos variables base64 y volver a cargarlas en Railway, o el cambio no se reflejará en producción.

@@ -10,3 +10,4 @@
 | Agente WhatsApp — base de datos | c7a56025-01aa-4c7d-9ac0-8f4b38b496c7 | 2026-06-09 | Clonado cowork-agentkit, knowledge base Skinner, arquitectura Airtable (tools + brain tool_use) |
 | Agente Skinner — agenda lista (semana 1) | c87f86b0-9766-408a-a299-54d9727a774e | 2026-06-10 | Tabla Turnos completa (13 campos) + 63 turnos generados; PAT Airtable bloqueado (403, cuenta duplicada) |
 | Skinner conectado a Meta WhatsApp | c7a56025-01aa-4c7d-9ac0-8f4b38b496c7 | 2026-06-11 | Deploy en Railway + fix docker-entrypoint (config gitignored) + conexion Meta WhatsApp Cloud API completa (pasos 2-6); falta prueba final |
+| Ñakurutu actualizacion | aa288b14-2219-478c-afcb-5e4bc7651af3 | 2026-06-16 | Proyecto Ñakurutu creado (main.py + 5 módulos), 5 tablas Airtable creadas via MCP, carga Ñk 24-25: 178 alumnos / 206 inscripciones / 749 pagos / 0 errores |

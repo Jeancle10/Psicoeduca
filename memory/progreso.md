@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 11/06/2026 (tarde, 13:16)
-## Estado actual: Agente Skinner desplegado en Railway + conectado a Meta WhatsApp — falta prueba final end-to-end ⚙️
+## Ultima sesion: 16/06/2026 (mañana, 11:44)
+## Estado actual: DOS proyectos activos — Skinner (WhatsApp pendiente prueba final) + Ñakurutu (tablas Airtable creadas, año 2024 cargado ✅)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -27,12 +27,21 @@
 - Tabla "Turnos": 13/13 campos completos
 - 63 turnos generados para las próximas 2 semanas (11/06 al 01/07/2026), todos "Disponible"
 
+## ✅ Completado (16/06/2026)
+- **Proyecto Ñakurutu** creado en `C:\Users\MI PC\proyectos\Ñakurutu\`
+- 5 tablas creadas en Airtable (base `appcetoe3cXohXKUb` "Ñakurutu Historico"):
+  Alumnos, Períodos, Inscripciones, Pagos, Cohortes (con fórmulas de retención y recaudación)
+- Carga año 2024: 178 alumnos, 206 inscripciones, 749 pagos, 0 errores
+  - `carga_24_25.py` en la carpeta del proyecto
+
 ## 🔄 En progreso
-- Falta la prueba final end-to-end: Jean escribe por WhatsApp a +595982469351 y se confirma que Skinner responde (ver handoff para pasos exactos)
+- **Ñakurutu**: cargar años anteriores 2014–2023 (archivos en `Copia Planillas presupuestos/`)
+- **Skinner**: falta la prueba final end-to-end — Jean escribe por WhatsApp a +595982469351
 
 ## ⏳ Pendiente
-- Confirmar prueba real de WhatsApp (Paso 7 guía Meta)
-- Decidir qué hacer con el turno de prueba `JUE-2026-06-18-1830` en Airtable (dato de prueba a nombre de Jean Clemotte)
+- Ñakurutu: `Ñk 22-23.xlsx`, `2022.xlsx`, `2021.xlsx`, `Extensivo Virtual 2021.xlsx`, `2020.xlsx`, `2019 Int.xlsx`, `2019 Ext.xlsx`, `2018.xlsx`, `2017.xlsx`, `2016.xlsx`, `2014.xlsx`
+- Skinner: confirmar prueba real de WhatsApp (Paso 7 guía Meta)
+- Decidir qué hacer con el turno de prueba `JUE-2026-06-18-1830` en Airtable
 - Desinstalar Avast Update Helper (sin urgencia)
 - Considerar upgrade a Windows 11 a largo plazo
 
@@ -82,3 +91,4 @@
 ## 🌙 Sesion cerrada: 15/06/2026 15:52
 ## 🌙 Sesion cerrada: 16/06/2026 09:54
 ## 🌙 Sesion cerrada: 16/06/2026 10:52
+## 🌙 Sesion cerrada: 16/06/2026 11:44

@@ -13,3 +13,4 @@
 | Ñakurutu actualizacion | aa288b14-2219-478c-afcb-5e4bc7651af3 | 2026-06-16 | Proyecto Ñakurutu creado (main.py + 5 módulos), 5 tablas Airtable creadas via MCP, carga Ñk 24-25: 178 alumnos / 206 inscripciones / 749 pagos / 0 errores |
 | Ñakurutu 22-23 cargado | 177c131c-c719-4415-b876-dea64c5af0a0 | 2026-06-16 | carga_22_23.py creado, Ñk 22-23.xlsx → Airtable: 156 alumnos / 193 inscripciones / 636 pagos / 0 errores; exploración 2022.xlsx iniciada |
 | PsicoEduca Backend + Frontend LIVE | d7781ea1-409f-4f09-b4b3-3ef71180bf4c | 2026-06-16 | Fase 2+3: Backend API (13 endpoints, 4 tests psicométricos), Frontend web (dashboard + formulario 135 preguntas + gráficos), Deploy Railway ✅ |
+| Actualizacion base de datos | aa288b14-2219-478c-afcb-5e4bc7651af3 | 2026-06-16 | Análisis Excel "Interpretacion de instrumentos" (113K+ fórmulas), mapeo formulario Google (135 preguntas), documentación para Google Apps Script |

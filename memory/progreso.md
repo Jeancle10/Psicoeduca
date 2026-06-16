@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 16/06/2026 (mediodía, 12:23)
-## Estado actual: TRES proyectos — Skinner (WhatsApp pendiente) + Ñakurutu (2024 cargado) + Google Forms/Apps Script (mapeo + documentación lista)
+## Ultima sesion: 16/06/2026 (tarde, 16:10)
+## Estado actual: Fase 2 + Fase 3 completadas. Backend + Frontend LIVE en Railway (60% proyecto)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -34,6 +34,18 @@
   - Identificados: STAI-E (P1-P20), STAI-R (P21-P40), BDI (P41-P63), BFI-5 (P64-P68), SCL-90-R (P69-P132)
   - Extraídos: Umbrales de categorización exactos (Leve/Moderado/Severo) por test
   - Generado: `MAPEO_FORMULARIO_GOOGLE.md` (listo para Google Apps Script)
+
+## ✅ Completado (16/06/2026 — sesión tarde: Backend + Frontend)
+- **PsicoEduca App Web — FASE 2 + 3 COMPLETADAS**
+  - Backend API: 13 endpoints (consultantes CRUD + evaluaciones + reportes)
+  - Modelos: Consultante, Evaluacion (SQLAlchemy + PostgreSQL)
+  - Lógica tests: STAI-E, STAI-R, BDI, BFI-5, SCL-90-R (con baremos y percentiles)
+  - Frontend: HTML/CSS/JS (dashboard + formulario 135 preguntas + resultados con gráficos)
+  - Infraestructura: Railway (project 2434ba24...), PostgreSQL (a8242aef...), Drive (carpeta "Consultantes IA")
+  - Documentación: API_DOCS.md, ESTADO_PROYECTO.md, RESUMEN_SESION.md
+  - Status: ✅ BACKEND LIVE + FRONTEND LIVE (3.5 horas de trabajo)
+  - Commits: 5 (backend + frontend + fixes + docs)
+  - URL pública: https://railway.com/project/2434ba24-659c-4207-9dc7-667fab44c137
 
 ## ✅ Completado (16/06/2026 — sesión mañana)
 - **Proyecto Ñakurutu** creado en `C:\Users\MI PC\proyectos\Ñakurutu\`

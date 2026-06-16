@@ -1,9 +1,9 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import os
 from models import db
 from api import init_api
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 # Configuración de BD
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://localhost/psicoeduca')
@@ -15,15 +15,10 @@ db.init_app(app)
 # Registrar APIs
 init_api(app)
 
-# Health check
+# Frontend
 @app.route('/')
-def health():
-    return jsonify({
-        "status": "ok",
-        "app": "PsicoEduca API",
-        "message": "Flask + PostgreSQL initialized",
-        "version": "1.0"
-    })
+def index():
+    return render_template('index.html')
 
 @app.route('/api/status')
 def status():
@@ -38,6 +33,14 @@ def test_db_connection():
         return True
     except Exception:
         return False
+
+# CORS (permitir requests desde el frontend)
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    return response
 
 # Crear tablas al iniciar
 with app.app_context():

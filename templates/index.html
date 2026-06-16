@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsicoEduca - Sistema de Evaluaciones</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 PsicoEduca</h1>
+      <p>Sistema de evaluaciones psicométricas - STAI, BDI, BFI-5, SCL-90-R</p>
+    </header>
+
+    <nav>
+      <button class="nav-btn active" data-section="dashboard">📊 Dashboard</button>
+      <button class="nav-btn" data-section="nuevo">➕ Nueva Evaluación</button>
+      <button class="nav-btn" data-section="resultados">📈 Resultados</button>
+    </nav>
+
+    <div class="content">
+      <!-- DASHBOARD -->
+      <div id="dashboard" class="section active">
+        <h2>Dashboard</h2>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label>Buscar por nombre:</label>
+            <input type="text" id="filter-nombre" placeholder="Nombre o apellido...">
+          </div>
+          <div class="filter-group">
+            <label>Edad mínima:</label>
+            <input type="number" id="filter-edad-min" placeholder="Min" min="0" max="100">
+          </div>
+          <div class="filter-group">
+            <label>Edad máxima:</label>
+            <input type="number" id="filter-edad-max" placeholder="Max" min="0" max="100">
+          </div>
+          <div class="filter-group">
+            <button onclick="filtrarConsultantes()">🔍 Filtrar</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table id="consultantes-table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Celular</th>
+                <th>Email</th>
+                <th>Evaluaciones</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="consultantes-tbody">
+              <tr><td colspan="6" style="text-align: center; padding: 40px;">Cargando...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- NUEVO CONSULTANTE / EVALUACIÓN -->
+      <div id="nuevo" class="section">
+        <h2>Nueva Evaluación</h2>
+
+        <div class="form-section">
+          <!-- Paso 1: Datos Demográficos -->
+          <div class="form-step active" data-step="1">
+            <h3>Paso 1: Datos Personales</h3>
+            <p>Completa la información demográfica del consultante</p>
+
+            <div class="question-group">
+              <label>Nombre completo *</label>
+              <input type="text" id="p1" placeholder="Ej: Juan García" required>
+            </div>
+
+            <div class="question-group">
+              <label>Fecha de nacimiento *</label>
+              <input type="date" id="p2" required>
+            </div>
+
+            <div class="question-group">
+              <label>Celular *</label>
+              <input type="tel" id="p3" placeholder="Ej: 595999999" required>
+            </div>
+
+            <div class="question-group">
+              <label>Email (opcional)</label>
+              <input type="email" id="email" placeholder="correo@ejemplo.com">
+            </div>
+
+            <div class="question-group">
+              <label>¿Es un consultante existente?</label>
+              <select id="consultante-existente" onchange="toggleConsultanteExistente()">
+                <option value="no">No, crear nuevo</option>
+                <option value="si">Sí, seleccionar existente</option>
+              </select>
+            </div>
+
+            <div id="consultantes-select-group" class="question-group" style="display: none;">
+              <label>Seleccionar consultante:</label>
+              <select id="consultante-select">
+                <option value="">Cargando...</option>
+              </select>
+            </div>
+
+            <div class="form-controls">
+              <button class="btn-primary" onclick="nextStep(2)">Siguiente →</button>
+            </div>
+          </div>
+
+          <!-- Paso 2: STAI -->
+          <div class="form-step" data-step="2">
+            <h3>Paso 2: STAI (Ansiedad Estado-Rasgo)</h3>
+            <p>Preguntas 4-43: Indica cómo te sientes ahora (0=Nada, 1=Algo, 2=Bastante, 3=Mucho)</p>
+            <div class="form-progress">
+              <div class="form-progress-bar" style="width: 25%;"></div>
+            </div>
+
+            <div id="stai-questions"></div>
+
+            <div class="form-controls">
+              <button class="btn-secondary" onclick="prevStep(1)">← Anterior</button>
+              <button class="btn-primary" onclick="nextStep(3)">Siguiente →</button>
+            </div>
+          </div>
+
+          <!-- Paso 3: BDI y BFI-5 -->
+          <div class="form-step" data-step="3">
+            <h3>Paso 3: BDI (Depresión) y BFI-5 (Personalidad)</h3>
+            <div class="form-progress">
+              <div class="form-progress-bar" style="width: 50%;"></div>
+            </div>
+
+            <h4 style="margin-top: 20px; margin-bottom: 15px; color: #667eea;">BDI (Depresión) - Preguntas 44-66</h4>
+            <div id="bdi-questions"></div>
+
+            <h4 style="margin-top: 20px; margin-bottom: 15px; color: #667eea;">BFI-5 (Personalidad) - Preguntas 67-71</h4>
+            <div id="bfi-questions"></div>
+
+            <div class="form-controls">
+              <button class="btn-secondary" onclick="prevStep(2)">← Anterior</button>
+              <button class="btn-primary" onclick="nextStep(4)">Siguiente →</button>
+            </div>
+          </div>
+
+          <!-- Paso 4: SCL-90-R -->
+          <div class="form-step" data-step="4">
+            <h3>Paso 4: SCL-90-R (Síntomas)</h3>
+            <p>Preguntas 72-135: ¿Con qué frecuencia te has sentido así? (0=Nada, 1=Un poco, 2=Bastante, 3=Mucho, 4=Extremadamente)</p>
+            <div class="form-progress">
+              <div class="form-progress-bar" style="width: 75%;"></div>
+            </div>
+
+            <div id="scl90-questions"></div>
+
+            <div class="form-controls">
+              <button class="btn-secondary" onclick="prevStep(3)">← Anterior</button>
+              <button class="btn-primary" onclick="submitForm()">✓ Enviar Evaluación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTADOS -->
+      <div id="resultados" class="section">
+        <h2>Resultados y Reportes</h2>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label>Seleccionar consultante:</label>
+            <select id="consultante-resultados" onchange="cargarResultadosConsultante()">
+              <option value="">Cargando...</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="resultados-container" style="display: none;">
+          <div class="results-header">
+            <h2 id="resultado-nombre">Nombre del Consultante</h2>
+            <p id="resultado-fecha">Última evaluación: --</p>
+          </div>
+
+          <div class="results-grid" id="resultados-grid"></div>
+
+          <div class="chart-container">
+            <h3>Evolución Temporal</h3>
+            <canvas id="chart-temporal"></canvas>
+          </div>
+
+          <div class="chart-container">
+            <h3>Últimas Evaluaciones</h3>
+            <div id="evaluaciones-list"></div>
+          </div>
+        </div>
+
+        <div id="estadisticas-container" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #eee;">
+          <h3 style="color: #667eea; margin-bottom: 20px;">Estadísticas Generales</h3>
+          <div class="results-grid" id="estadisticas-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert-container" style="position: fixed; top: 20px; right: 20px; max-width: 400px; z-index: 1000;"></div>
+
+  <script src="{{ url_for('static', filename='js/api.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

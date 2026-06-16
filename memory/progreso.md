@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 16/06/2026 (mañana, 11:44)
-## Estado actual: DOS proyectos activos — Skinner (WhatsApp pendiente prueba final) + Ñakurutu (tablas Airtable creadas, año 2024 cargado ✅)
+## Ultima sesion: 16/06/2026 (mediodía, 12:23)
+## Estado actual: TRES proyectos — Skinner (WhatsApp pendiente) + Ñakurutu (2024 cargado) + Google Forms/Apps Script (mapeo + documentación lista)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -27,7 +27,15 @@
 - Tabla "Turnos": 13/13 campos completos
 - 63 turnos generados para las próximas 2 semanas (11/06 al 01/07/2026), todos "Disponible"
 
-## ✅ Completado (16/06/2026)
+## ✅ Completado (16/06/2026 — sesión mediodía)
+- **Análisis Excel "Interpretacion de instrumentos.xlsx"** (113K+ fórmulas, 6 hojas, evaluación psicométrica STAI+BDI+BFI+SCL)
+  - Generado: `ANALISIS_INTERPRETACION_INSTRUMENTOS.md` (análisis técnico completo)
+- **Mapeo Formulario Google → Excel** (135 preguntas, 5 tests, 10 tablas nombradas)
+  - Identificados: STAI-E (P1-P20), STAI-R (P21-P40), BDI (P41-P63), BFI-5 (P64-P68), SCL-90-R (P69-P132)
+  - Extraídos: Umbrales de categorización exactos (Leve/Moderado/Severo) por test
+  - Generado: `MAPEO_FORMULARIO_GOOGLE.md` (listo para Google Apps Script)
+
+## ✅ Completado (16/06/2026 — sesión mañana)
 - **Proyecto Ñakurutu** creado en `C:\Users\MI PC\proyectos\Ñakurutu\`
 - 5 tablas creadas en Airtable (base `appcetoe3cXohXKUb` "Ñakurutu Historico"):
   Alumnos, Períodos, Inscripciones, Pagos, Cohortes (con fórmulas de retención y recaudación)

@@ -31,15 +31,19 @@
 - **Proyecto Ñakurutu** creado en `C:\Users\MI PC\proyectos\Ñakurutu\`
 - 5 tablas creadas en Airtable (base `appcetoe3cXohXKUb` "Ñakurutu Historico"):
   Alumnos, Períodos, Inscripciones, Pagos, Cohortes (con fórmulas de retención y recaudación)
-- Carga año 2024: 178 alumnos, 206 inscripciones, 749 pagos, 0 errores
-  - `carga_24_25.py` en la carpeta del proyecto
+- Carga año 2024: 178 alumnos, 206 inscripciones, 749 pagos, 0 errores — `carga_24_25.py`
+- Carga año 22-23: 156 alumnos nuevos, 193 inscripciones, 636 pagos, 0 errores — `carga_22_23.py`
+  - Intensivo Mañana 22-23: 61 insc, 239 pagos
+  - Intensivo Noche 22-23: 70 insc, 238 pagos
+  - Extensivo 2022: 62 insc, 159 pagos
+  - Costo base: 400k Intensivo / 385k Extensivo (verificar si es correcto)
 
 ## 🔄 En progreso
-- **Ñakurutu**: cargar años anteriores 2014–2023 (archivos en `Copia Planillas presupuestos/`)
+- **Ñakurutu**: cargar años anteriores 2014–2022 (archivos en `Copia Planillas presupuestos/`)
 - **Skinner**: falta la prueba final end-to-end — Jean escribe por WhatsApp a +595982469351
 
 ## ⏳ Pendiente
-- Ñakurutu: `Ñk 22-23.xlsx`, `2022.xlsx`, `2021.xlsx`, `Extensivo Virtual 2021.xlsx`, `2020.xlsx`, `2019 Int.xlsx`, `2019 Ext.xlsx`, `2018.xlsx`, `2017.xlsx`, `2016.xlsx`, `2014.xlsx`
+- Ñakurutu próximos archivos (en orden): `2022.xlsx`, `2021.xlsx`, `Extensivo Virtual 2021.xlsx`, `2020.xlsx`, `2019 Int.xlsx`, `2019 Ext.xlsx`, `2018.xlsx`, `2017.xlsx`, `2016.xlsx`, `2014.xlsx`
 - Skinner: confirmar prueba real de WhatsApp (Paso 7 guía Meta)
 - Decidir qué hacer con el turno de prueba `JUE-2026-06-18-1830` en Airtable
 - Desinstalar Avast Update Helper (sin urgencia)
@@ -92,3 +96,9 @@
 ## 🌙 Sesion cerrada: 16/06/2026 09:54
 ## 🌙 Sesion cerrada: 16/06/2026 10:52
 ## 🌙 Sesion cerrada: 16/06/2026 11:44
+## 🌙 Sesion cerrada: 16/06/2026 11:50
+## 🌙 Sesion cerrada: 16/06/2026 11:51
+## 🌙 Sesion cerrada: 16/06/2026 12:04
+## 🌙 Sesion cerrada: 16/06/2026 12:05
+## 🌙 Sesion cerrada: 16/06/2026 12:20
+## 🌙 Sesion cerrada: 16/06/2026 12:23

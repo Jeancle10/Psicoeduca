@@ -58,16 +58,17 @@
   - Extensivo 2022: 62 insc, 159 pagos
   - Costo base: 400k Intensivo / 385k Extensivo (verificar si es correcto)
 
-## ✅ Completado (18/06/2026 — sesión Skinner expansión)
-- **Skinner v2: Prospección + Reportes**
-  - Herramienta `iniciar_prospection`: registra nuevos prospectantes en Airtable automáticamente
-  - Herramienta `reporte_turnos_agendados`: lista de citas confirmadas
-  - Herramienta `reporte_turnos_disponibles`: horarios libres
-  - Herramienta `reporte_estadisticas_agenda`: ocupación + stats
-  - Herramienta `reporte_ingresos`: cálculo de recaudación estimada (1ª = 300k, siguientes = 250k)
-  - Prompt actualizado con instrucciones de prospección y reportes
-  - Documentación: `docs/PROSPECCION_Y_REPORTES.md`
-  - Deploy a Railway ✅ (logs confirman respuestas con nuevo prompt)
+## ✅ Completado (18/06/2026 — sesión Skinner expansión integral)
+- **Skinner v3: Identificación de usuario + roles diferenciados**
+  - Herramienta `buscar_usuario`: identifica quién escribe (Jean, Milva, consultante, desconocido)
+  - Respuestas diferenciadas por rol:
+    - **Jean**: acceso admin (reportes, estadísticas, datos)
+    - **Milva Servian (asistente)**: saludo personal + modo recepción de datos
+    - **Consultantes registrados**: atención al cliente estándar
+    - **Desconocidos**: modo prospección
+  - 6 herramientas total: buscar_usuario + 5 de reportes/prospección
+  - Prompt rediseñado con sistema de identificación automática
+  - Deploy a Railway ✅ (PROMPTS_YAML_B64 regenerado, 10660 chars)
 
 ## 🔄 En progreso
 - **Ñakurutu**: cargar años anteriores 2014–2022 (archivos en `Copia Planillas presupuestos/`)

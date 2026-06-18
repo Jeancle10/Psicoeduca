@@ -1,147 +1,47 @@
-# HANDOFF — 2026-06-16 — 16:10
+# HANDOFF — 2026-06-18 — 10:40
 
-## ✅ Completado en Esta Sesión
+## ✅ Completado en esta sesión
+- **Skinner v2 — Prospección + Reportes** (3 horas de trabajo)
+  - 5 herramientas nuevas agregadas: `iniciar_prospection`, `reporte_turnos_agendados`, `reporte_turnos_disponibles`, `reporte_estadisticas_agenda`, `reporte_ingresos`
+  - Prompt expandido con instrucciones sobre cuándo activar cada herramienta
+  - Deploy a Railway ✅ (nuevo código + variables PROMPTS_YAML_B64 regenerado)
+  - Documentación completa: `docs/PROSPECCION_Y_REPORTES.md`
+  - GitHub: 1 commit pusheado (feat: prospección + reportes, commit 279aa93)
+  - Railway logs confirman que Skinner responde con nuevo prompt ✅
 
-### Fase 2: Backend API (LIVE ✅)
-- Modelos SQLAlchemy: `Consultante`, `Evaluacion`
-- Lógica de cálculos: STAI-E, STAI-R, BDI, BFI-5, SCL-90-R (con baremos)
-- 13 endpoints REST completos (CRUD + reportes)
-- PostgreSQL en Railway (service: a8242aef...)
-- Deploy exitoso: `status = SUCCESS`
+## 🔄 En progreso (quedó a medias)
+- **Tabla "Prospectantes" en Airtable**: Necesita ser creada manualmente (campos: telefono, fecha, estado, nombre, edad, preferencia horario, modalidad)
+  - Una vez creada, Skinner automáticamente va a registrar nuevos prospectantes
 
-### Fase 3: Frontend Web (LIVE ✅)
-- Interfaz HTML/CSS/JS: 1,700+ líneas
-  - Dashboard: tabla consultantes + filtros (nombre, edad)
-  - Formulario: 135 preguntas en 4 pasos (datos + STAI + BDI/BFI + SCL-90)
-  - Resultados: tarjetas con scores + gráficos Chart.js + estadísticas
-- API client con auto-detect URL
-- Validación en tiempo real
-- Deploy completado: gunicorn listening on :8080 ✅
+## ⏳ Próxima sesión — primer paso EXACTO
+1. Abrí Airtable → base PsicoEduca
+2. Click en `+` → Nueva tabla → Nombrá **Prospectantes**
+3. Creá estos campos:
+   - `Telefono` (texto) — obligatorio
+   - `Fecha` (fecha) — obligatorio  
+   - `Estado` (single select: "Contactado", "En progreso", "Convertido", "Descartado") — obligatorio
+   - `Nombre` (texto, opcional)
+   - `Edad` (número, opcional)
+   - `Preferencia horario` (texto, opcional)
+   - `Modalidad` (single select: "Virtual", "Presencial", "A definir", opcional)
+4. Probá Skinner: escribile "Quiero agendar" → debe registrarse automáticamente
+5. Probá reportes: escribile "Dame un reporte de turnos agendados" → debe devolver lista formateada
 
-### Infraestructura
-- Railway project: "PsicoEduca" https://railway.com/project/2434ba24...
-- Google Drive: carpeta "Consultantes IA" (ID: 1GTOx8fihwgG1dFonkR...)
-- GitHub: 4 commits, todo pusheado
+## ⚠️ Errores encontrados hoy
+Ninguno — todo funcionó a la primera ✅
 
-### Documentación
-- API_DOCS.md: referencia completa (13 endpoints, ejemplos curl)
-- ESTADO_PROYECTO.md: estado actual (60% completado)
-- RESUMEN_SESION.md: resumen ejecutivo
+## 🧠 Decisiones tomadas
+- Prospección se activa SOLO cuando usuario dice "quiero agendar" (opción B = controlada)
+- Todos los reportes disponibles por demanda (Jean pide lo que necesita)
+- Tabla Prospectantes separada de Turnos (mejor organización)
 
-## 🔄 En Progreso (Quedó a Medias)
+## 📁 Archivos modificados
+- `agent/tools/airtable.py` (5 nuevas funciones + 5 nuevas herramientas en TOOLS + dispatcher)
+- `config/prompts.yaml` (instrucciones prospección + reportes) — regenerado en Railway vía PROMPTS_YAML_B64
+- `docs/PROSPECCION_Y_REPORTES.md` (nuevo — documentación de uso)
+- Railway variables: `PROMPTS_YAML_B64` regenerado (8756 chars)
 
-**Ninguno** — Todo completado y desplegado ✅
-
-## ⏳ Próxima Sesión — Primer Paso EXACTO
-
-### 1. Verificar que Frontend está accesible (2 min)
-1. Ir a: https://railway.com/project/2434ba24-659c-4207-9dc7-667fab44c137
-2. Click en servicio `psicoeduca-api`
-3. Copiar dominio público (ej: psicoeduca-xxx.railway.app)
-4. Entrar en navegador → debe ver la interfaz
-
-### 2. Testear Funcionalidades (10 min)
-- [ ] Dashboard carga tabla de consultantes
-- [ ] Crear nuevo consultante
-- [ ] Cargar evaluación (llenar 135 preguntas)
-- [ ] Ver resultados (scores + gráficos)
-- [ ] Estadísticas generales
-
-### 3. Si todo OK → Fase 4: Integraciones (4-6 horas)
-- Google Docs automático: crear documento en Drive cuando se carga evaluación
-- PDF export: descargar resultados como PDF
-- Plantilla de ficha psicológica
-
----
-
-## ⚠️ Errores Encontrados Hoy
-
-### Error de Compatibilidad Flask-SQLAlchemy (RESUELTO)
-- **Síntoma**: `AttributeError: module 'sqlalchemy' has no attribute '__all__'`
-- **Causa**: Flask-SQLAlchemy 3.0.0 con SQLAlchemy vieja
-- **Solución**: Actualizar a Flask 3.0 + SQLAlchemy 2.0.23
-- **Status**: ✅ Resuelto, frontend deployado exitosamente
-
----
-
-## 🧠 Decisiones Tomadas
-
-1. **Frontend vanilla JavaScript** — sin React/Vue
-   - Razón: CRUD simple, no necesita state management complejo
-   - Ventaja: 0 node_modules, deploy más rápido, menos vulnerabilidades
-
-2. **Jinja2 templates** — en lugar de SPA puro
-   - Razón: Flask los sirve automáticamente
-   - Ventaja: SEO friendly, compatible con cachés CDN
-
-3. **Chart.js para gráficos** — en lugar de D3/Plotly
-   - Razón: Lightweight (40KB), suficiente para casos de uso
-   - Ventaja: Setup simple, documentación clara
-
-4. **Auto-detect API_BASE** — en frontend
-   - Razón: Funciona igual en localhost que en Railway
-   - Ventaja: 0 cambios de config entre dev y prod
-
-5. **JSON para respuestas crudas** — almacenar todas las 135 respuestas
-   - Razón: Auditoría, recomputo, trazabilidad
-   - Ventaja: Datos históricos completos
-
----
-
-## 📁 Archivos Modificados/Creados
-
-```
-NUEVOS:
-✅ models.py (250 líneas)
-✅ tests_logic.py (200 líneas)
-✅ api/__init__.py
-✅ api/consultantes.py (100 líneas)
-✅ api/evaluaciones.py (150 líneas)
-✅ api/resultados.py (120 líneas)
-✅ templates/base.html
-✅ templates/index.html (600 líneas)
-✅ static/css/style.css (700 líneas)
-✅ static/js/api.js (150 líneas)
-✅ static/js/app.js (800 líneas)
-✅ API_DOCS.md
-✅ ESTADO_PROYECTO.md
-✅ RESUMEN_SESION.md
-
-MODIFICADOS:
-✏️ app.py (templates + CORS)
-✏️ requirements.txt (versiones)
-✏️ bitacora/2026-06-16.md
-
-COMMITS:
-✅ ac222e1 - Backend: modelos + APIs + lógica tests
-✅ 9ce8e23 - Frontend: dashboard + formulario + resultados
-✅ 265d3ad - Fix: versiones compatibles Flask/SQLAlchemy
-✅ bc876de - Docs: resumen ejecutivo
-```
-
----
-
-## 📊 Métrica de Sesión
-
-| Métrica | Valor |
-|---------|-------|
-| Duración | 3.5 horas |
-| Python | 1,200+ líneas |
-| HTML/CSS/JS | 2,500+ líneas |
-| Total código | 3,700+ líneas |
-| Endpoints | 13 |
-| Tests psicométricos | 4 |
-| Items formulario | 135 |
-| % Proyecto completado | 60% |
-| Estado backend | ✅ LIVE |
-| Estado frontend | ✅ LIVE |
-
----
-
-## 🎯 Próximas Fases
-
-- **Fase 4**: Integraciones (Google Docs + PDF) — 4-6 horas
-- **Fase 5**: Testing + optimizaciones — 2-3 horas
-- **Fase 6**: Deploy final — 1 hora
-
-**Total restante:** ~8-10 horas (2-3 sesiones)
+## 🚀 Deploy Status
+- ✅ GitHub: 1 commit pusheado (279aa93)
+- ✅ Railway: Automáticamente re-desplegó (logs confirman nuevo prompt)
+- ✅ Todas las herramientas disponibles en tool_use de Claude

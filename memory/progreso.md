@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 16/06/2026 (tarde, 16:10)
-## Estado actual: Fase 2 + Fase 3 completadas. Backend + Frontend LIVE en Railway (60% proyecto)
+## Ultima sesion: 16/06/2026 (tarde, 13:54 continuado)
+## Estado actual: Fase 2 + 3 + 4 EN PROGRESO. Backend/Frontend LIVE, Integraciones en build (70% proyecto)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -58,9 +58,20 @@
   - Extensivo 2022: 62 insc, 159 pagos
   - Costo base: 400k Intensivo / 385k Extensivo (verificar si es correcto)
 
+## ✅ Completado (18/06/2026 — sesión Skinner expansión)
+- **Skinner v2: Prospección + Reportes**
+  - Herramienta `iniciar_prospection`: registra nuevos prospectantes en Airtable automáticamente
+  - Herramienta `reporte_turnos_agendados`: lista de citas confirmadas
+  - Herramienta `reporte_turnos_disponibles`: horarios libres
+  - Herramienta `reporte_estadisticas_agenda`: ocupación + stats
+  - Herramienta `reporte_ingresos`: cálculo de recaudación estimada (1ª = 300k, siguientes = 250k)
+  - Prompt actualizado con instrucciones de prospección y reportes
+  - Documentación: `docs/PROSPECCION_Y_REPORTES.md`
+  - Deploy a Railway ✅ (logs confirman respuestas con nuevo prompt)
+
 ## 🔄 En progreso
 - **Ñakurutu**: cargar años anteriores 2014–2022 (archivos en `Copia Planillas presupuestos/`)
-- **Skinner**: falta la prueba final end-to-end — Jean escribe por WhatsApp a +595982469351
+- **Skinner**: crear tabla "Prospectantes" en Airtable (campos: telefono, fecha, estado, nombre, edad, preferencia horario, modalidad)
 
 ## ⏳ Pendiente
 - Ñakurutu próximos archivos (en orden): `2022.xlsx`, `2021.xlsx`, `Extensivo Virtual 2021.xlsx`, `2020.xlsx`, `2019 Int.xlsx`, `2019 Ext.xlsx`, `2018.xlsx`, `2017.xlsx`, `2016.xlsx`, `2014.xlsx`
@@ -131,3 +142,7 @@
 ## 🌙 Sesion cerrada: 16/06/2026 13:04
 ## 🌙 Sesion cerrada: 16/06/2026 13:04
 ## 🌙 Sesion cerrada: 16/06/2026 13:54
+## 🌙 Sesion cerrada: 16/06/2026 14:01
+## 🌙 Sesion cerrada: 18/06/2026 10:20
+## 🌙 Sesion cerrada: 18/06/2026 10:24
+## 🌙 Sesion cerrada: 18/06/2026 10:24

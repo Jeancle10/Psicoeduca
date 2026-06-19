@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 19/06/2026 (noche, 22:41)
-## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022-2023-2024-2025 completo en Airtable (⚠️ 2022 tiene datos incorrectos, 2023-2024-2025 correctos)
+## Ultima sesion: 19/06/2026 (noche, 22:49)
+## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022-2023-2024-2025 COMPLETO en Airtable (⚠️ 2022 tiene datos incorrectos, 2023-2024-2025 CORRECTOS, todos 12 meses). Total histórico: 1,956 consultantes, 2,854 consultas
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -107,15 +107,40 @@
     - Noviembre: 48 consultantes, 62 consultas
   - **Total 2025 (hasta noviembre): 536 consultantes distintos, 818 consultas**
 
-## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2024 Completo)
-- **Análisis Mensual 2024 en Airtable — TABLA CREADA Y CARGADA CORRECTAMENTE**:
-  - Script `procesar_2024.py` procesa 12 bloques mensuales de fechas automáticamente
-  - Tabla "Análisis Mensual 2024" creada (ID: tblaq4fZz7BhgapvD)
-  - 3 registros cargados correctamente (solo Enero-Marzo tienen datos):
+## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2024-2025 CORRECTO — todos los 12 meses)
+- **Análisis Mensual 2024 en Airtable — 12 MESES COMPLETOS CARGADOS**:
+  - Script `procesar_2024.py` corregido para procesar filas sin horarios explícitos
+  - Tabla "Análisis Mensual 2024" recreada con 12 registros:
     - Enero: 40 consultantes, 77 consultas
     - Febrero: 42 consultantes, 79 consultas
     - Marzo: 29 consultantes, 42 consultas
-  - **Total 2024 (hasta marzo): 111 consultantes distintos, 198 consultas**
+    - Abril: 45 consultantes, 64 consultas
+    - Mayo: 51 consultantes, 70 consultas
+    - Junio: 45 consultantes, 73 consultas
+    - Julio: 41 consultantes, 57 consultas
+    - Agosto: 31 consultantes, 35 consultas
+    - Septiembre: 37 consultantes, 63 consultas
+    - Octubre: 53 consultantes, 97 consultas
+    - Noviembre: 58 consultantes, 103 consultas
+    - Diciembre: 32 consultantes, 49 consultas
+  - **Total 2024: 504 consultantes distintos, 809 consultas**
+
+- **Análisis Mensual 2025 en Airtable — 12 MESES COMPLETOS CARGADOS (incluyendo DICIEMBRE)**:
+  - Script `procesar_2025.py` corregido, ahora captura todos los meses
+  - Tabla "Análisis Mensual 2025" recreada con 12 registros:
+    - Enero: 44 consultantes, 64 consultas
+    - Febrero: 33 consultantes, 64 consultas
+    - Marzo: 45 consultantes, 65 consultas
+    - Abril: 51 consultantes, 86 consultas
+    - Mayo: 56 consultantes, 74 consultas
+    - Junio: 47 consultantes, 72 consultas
+    - Julio: 58 consultantes, 88 consultas
+    - Agosto: 57 consultantes, 84 consultas
+    - Septiembre: 60 consultantes, 75 consultas
+    - Octubre: 60 consultantes, 80 consultas
+    - Noviembre: 51 consultantes, 65 consultas
+    - Diciembre: 53 consultantes, 68 consultas
+  - **Total 2025: 615 consultantes distintos, 885 consultas**
 
 ## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2023 Completo + Corrección 2022)
 - **Análisis Mensual 2023 en Airtable — TABLA CREADA Y CARGADA CORRECTAMENTE**:

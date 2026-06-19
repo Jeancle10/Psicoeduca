@@ -55,26 +55,24 @@ for block_idx, fecha_row in enumerate(fecha_rows):
     data_rows = range(fecha_row + 1, next_fecha_row)
 
     for row_idx in data_rows:
-        horario_cell = ws.cell(row=row_idx, column=1).value
+        # Procesar todos los nombres en la fila, sin requerir horario explícito
+        for col in range(2, ws.max_column + 1):
+            nombre_cell = ws.cell(row=row_idx, column=col).value
 
-        if horario_cell and isinstance(horario_cell, str) and 'hs' in horario_cell:
-            for col in range(2, ws.max_column + 1):
-                nombre_cell = ws.cell(row=row_idx, column=col).value
+            if nombre_cell and isinstance(nombre_cell, str):
+                nombre = nombre_cell.strip()
+                if nombre and nombre != '-':
+                    # Limpiar nombre
+                    nombre = nombre.replace(' VIR', '').replace(' virtual', '').replace(' videollamada', '')
+                    nombre = re.sub(r'\s\d{1,2}:\d{2}', '', nombre).strip()
+                    nombre = nombre.replace(' P/', '').strip()
 
-                if nombre_cell and isinstance(nombre_cell, str):
-                    nombre = nombre_cell.strip()
-                    if nombre and nombre != '-':
-                        # Limpiar nombre
-                        nombre = nombre.replace(' VIR', '').replace(' virtual', '').replace(' videollamada', '')
-                        nombre = re.sub(r'\s\d{1,2}:\d{2}', '', nombre).strip()
-                        nombre = nombre.replace(' P/', '').strip()
+                    if col in fechas_por_col:
+                        fecha = fechas_por_col[col]
+                        mes = fecha.month
 
-                        if col in fechas_por_col:
-                            fecha = fechas_por_col[col]
-                            mes = fecha.month
-
-                            months_data[mes]['consultas'].append(nombre)
-                            months_data[mes]['consultantes_set'].add(nombre.lower())
+                        months_data[mes]['consultas'].append(nombre)
+                        months_data[mes]['consultantes_set'].add(nombre.lower())
 
 # Mostrar resultados
 print("\n" + "="*70)

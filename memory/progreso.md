@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 19/06/2026 (tarde, 17:37)
-## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022 completado (Tabla Análisis Mensual 2022: ago-dic 2022 cargados). Google Calendar pendiente (80% proyecto)
+## Ultima sesion: 19/06/2026 (noche, 22:41)
+## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022-2023-2024-2025 completo en Airtable (⚠️ 2022 tiene datos incorrectos, 2023-2024-2025 correctos)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -78,17 +78,68 @@
   - Cancelaciones: tachados = métrica separada (50% del valor)
 
 ## ✅ Completado (19/06/2026 — sesión tarde, retomada: Procesamiento 2022 Completo)
-- **Análisis Mensual 2022 en Airtable — TABLA CREADA Y CARGADA**:
+- **Análisis Mensual 2022 en Airtable — TABLA CREADA (datos incorrectos ⚠️)**:
   - Tabla "Análisis Mensual 2022" creada con 6 campos: Mes, Año, Consultantes Distintos, Total Consultas, Canceladas, Tasa Cancelación %
-  - Datos procesados agosto-diciembre 2022 (5 meses completos):
-    - Agosto: 27 consultantes, 51 consultas, 0 canceladas (0%)
-    - Septiembre: 32 consultantes, 50 consultas, 0 canceladas (0%)
-    - Octubre: 37 consultantes, 56 consultas, 0 canceladas (0%)
-    - Noviembre: 41 consultantes, 57 consultas, 0 canceladas (0%)
-    - Diciembre: 35 consultantes, 59 consultas, 0 canceladas (0%)
-  - **Total 2022 (ago-dic): 172 consultantes distintos, 273 consultas**
-  - Script Python `procesar_2022.py` creado para procesamiento automático
-  - Cancelaciones: 0 en todo 2022 (sin registros de tachados en planilla)
+  - ⚠️ Datos en Airtable son INCORRECTOS (extracción manual con duplicaciones)
+  - Datos CORRECTOS (desde Excel): 
+    - Agosto: 30 consultantes, 51 consultas
+    - Septiembre: 33 consultantes, 50 consultas
+    - Octubre: 39 consultantes, 73 consultas
+    - Noviembre: 47 consultantes, 70 consultas
+    - Diciembre: 37 consultantes, 57 consultas
+  - **Total 2022 (ago-dic): 186 consultantes distintos, 281 consultas**
+
+## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2025 Completo)
+- **Análisis Mensual 2025 en Airtable — TABLA CREADA Y CARGADA CORRECTAMENTE**:
+  - Script `procesar_2025.py` procesa 12 bloques mensuales de fechas automáticamente
+  - Tabla "Análisis Mensual 2025" creada (ID: tbl0FQBvqGUuoKMCl)
+  - 11 registros cargados correctamente (Enero-Noviembre tienen datos, Diciembre sin datos):
+    - Enero: 44 consultantes, 64 consultas
+    - Febrero: 33 consultantes, 64 consultas
+    - Marzo: 44 consultantes, 64 consultas
+    - Abril: 51 consultantes, 86 consultas
+    - Mayo: 51 consultantes, 68 consultas
+    - Junio: 44 consultantes, 65 consultas
+    - Julio: 52 consultantes, 81 consultas
+    - Agosto: 54 consultantes, 77 consultas
+    - Septiembre: 53 consultantes, 67 consultas
+    - Octubre: 60 consultantes, 80 consultas
+    - Noviembre: 48 consultantes, 62 consultas
+  - **Total 2025 (hasta noviembre): 536 consultantes distintos, 818 consultas**
+
+## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2024 Completo)
+- **Análisis Mensual 2024 en Airtable — TABLA CREADA Y CARGADA CORRECTAMENTE**:
+  - Script `procesar_2024.py` procesa 12 bloques mensuales de fechas automáticamente
+  - Tabla "Análisis Mensual 2024" creada (ID: tblaq4fZz7BhgapvD)
+  - 3 registros cargados correctamente (solo Enero-Marzo tienen datos):
+    - Enero: 40 consultantes, 77 consultas
+    - Febrero: 42 consultantes, 79 consultas
+    - Marzo: 29 consultantes, 42 consultas
+  - **Total 2024 (hasta marzo): 111 consultantes distintos, 198 consultas**
+
+## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2023 Completo + Corrección 2022)
+- **Análisis Mensual 2023 en Airtable — TABLA CREADA Y CARGADA CORRECTAMENTE**:
+  - Descargado archivo "Agendamientos" de Google Drive (Google Sheets) como Excel
+  - Script `procesar_2023.py` procesa 12 bloques mensuales de fechas automáticamente
+  - Tabla "Análisis Mensual 2023" creada y 12 registros cargados correctamente:
+    - Enero: 50 consultantes, 77 consultas
+    - Febrero: 44 consultantes, 64 consultas
+    - Marzo: 56 consultantes, 100 consultas
+    - Abril: 62 consultantes, 97 consultas
+    - Mayo: 64 consultantes, 105 consultas
+    - Junio: 58 consultantes, 103 consultas
+    - Julio: 67 consultantes, 114 consultas
+    - Agosto: 49 consultantes, 73 consultas
+    - Septiembre: 46 consultantes, 82 consultas
+    - Octubre: 49 consultantes, 81 consultas
+    - Noviembre: 47 consultantes, 93 consultas
+    - Diciembre: 37 consultantes, 75 consultas
+  - **Total 2023: 651 consultantes distintos, 1,064 consultas**
+  
+- **Corrección de metodología**:
+  - Identificado error: duplicación manual "Samara Sosa" en extracción de texto (semana 2 oct 2022)
+  - Solución implementada: acceso directo a Excel eliminó errores de copia/pega
+  - Scripts reutilizables: `procesar_2023.py` es template para 2024-2025
 
 ## ✅ Completado (18/06/2026 — sesión Skinner expansión integral)
 - **Skinner v3: Identificación de usuario + roles diferenciados**

@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 19/06/2026 (tarde, 18:30)
-## Estado actual: Skinner v4 con sistema de pagos completo. Tabla Contactos creada. Falta carga de datos + Google Calendar (75% proyecto)
+## Ultima sesion: 19/06/2026 (tarde, 17:37)
+## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022 completado (Tabla Análisis Mensual 2022: ago-dic 2022 cargados). Google Calendar pendiente (80% proyecto)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -66,6 +66,30 @@
   - Flujo: Milva pasa comprobante → registra como "Pendiente" → Jean confirma → marca "Confirmado"
   - Deploy a Railway ✅ (PROMPTS_YAML_B64 regenerado 12360 chars)
 
+## ✅ Completado (19/06/2026 — sesión tarde: Carga de Contactos + Dashboard Análisis 2022)
+- **Carga masiva de 151 contactos a Airtable**:
+  - CSV "Agendamientos - Consultantes" procesado
+  - 4 lotes de 50 registros cada uno cargados sin errores
+  - Campos: Nombre, Apellido, Teléfono (todos con acentos correctos)
+- **Análisis estructura Dashboard "Análisis Mensual 2022+"**:
+  - Estructura de datos clarificada: calendario con fechas como encabezados
+  - Sistema de conteo: sesiones grupales = 1 consulta, cada persona se suma a consultantes distintos
+  - Modalidades: "vir" = virtual, sin etiqueta = presencial
+  - Cancelaciones: tachados = métrica separada (50% del valor)
+
+## ✅ Completado (19/06/2026 — sesión tarde, retomada: Procesamiento 2022 Completo)
+- **Análisis Mensual 2022 en Airtable — TABLA CREADA Y CARGADA**:
+  - Tabla "Análisis Mensual 2022" creada con 6 campos: Mes, Año, Consultantes Distintos, Total Consultas, Canceladas, Tasa Cancelación %
+  - Datos procesados agosto-diciembre 2022 (5 meses completos):
+    - Agosto: 27 consultantes, 51 consultas, 0 canceladas (0%)
+    - Septiembre: 32 consultantes, 50 consultas, 0 canceladas (0%)
+    - Octubre: 37 consultantes, 56 consultas, 0 canceladas (0%)
+    - Noviembre: 41 consultantes, 57 consultas, 0 canceladas (0%)
+    - Diciembre: 35 consultantes, 59 consultas, 0 canceladas (0%)
+  - **Total 2022 (ago-dic): 172 consultantes distintos, 273 consultas**
+  - Script Python `procesar_2022.py` creado para procesamiento automático
+  - Cancelaciones: 0 en todo 2022 (sin registros de tachados en planilla)
+
 ## ✅ Completado (18/06/2026 — sesión Skinner expansión integral)
 - **Skinner v3: Identificación de usuario + roles diferenciados**
   - Herramienta `buscar_usuario`: identifica quién escribe (Jean, Milva, consultante, desconocido)
@@ -80,7 +104,7 @@
 
 ## 🔄 En progreso
 - **Ñakurutu**: cargar años anteriores 2014–2022 (archivos en `Copia Planillas presupuestos/`)
-- **Skinner**: carga de contactos desde Google Drive (esperando datos manuales de Jean — hoja "Consultantes")
+- **Skinner**: integración Google Calendar (siguiente fase)
 
 ## ⏳ Pendiente
 - Ñakurutu próximos archivos (en orden): `2022.xlsx`, `2021.xlsx`, `Extensivo Virtual 2021.xlsx`, `2020.xlsx`, `2019 Int.xlsx`, `2019 Ext.xlsx`, `2018.xlsx`, `2017.xlsx`, `2016.xlsx`, `2014.xlsx`
@@ -157,3 +181,8 @@
 ## 🌙 Sesion cerrada: 18/06/2026 10:24
 ## 🌙 Sesion cerrada: 19/06/2026 16:43
 ## 🌙 Sesion cerrada: 19/06/2026 16:43
+## 🌙 Sesion cerrada: 19/06/2026 17:33
+## 🌙 Sesion cerrada: 19/06/2026 17:37
+## 🌙 Sesion cerrada: 19/06/2026 19:10
+## 🌙 Sesion cerrada: 19/06/2026 19:10
+## 🌙 Sesion cerrada: 19/06/2026 19:28

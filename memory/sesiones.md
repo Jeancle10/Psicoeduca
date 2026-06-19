@@ -15,3 +15,4 @@
 | PsicoEduca Backend + Frontend LIVE | d7781ea1-409f-4f09-b4b3-3ef71180bf4c | 2026-06-16 | Fase 2+3: Backend API (13 endpoints, 4 tests psicométricos), Frontend web (dashboard + formulario 135 preguntas + gráficos), Deploy Railway ✅ |
 | Actualizacion base de datos | aa288b14-2219-478c-afcb-5e4bc7651af3 | 2026-06-16 | Análisis Excel "Interpretacion de instrumentos" (113K+ fórmulas), mapeo formulario Google (135 preguntas), documentación para Google Apps Script |
 | Sistema Multi-Rol (Jean/Milva/Consultantes) | c7a56025-01aa-4c7d-9ac0-8f4b38b496c7 | 2026-06-19 | Skinner v4: sistema de pagos (Pendiente/Confirmado) + tabla Contactos + 6 herramientas. Falta: carga de datos + Google Calendar |
+| Carga de contactos + Dashboard 2022 | 6c3d44aa-e3a8-4c2c-8cbb-7c87c2a06fb8 | 2026-06-19 | 151 contactos cargados a Airtable. Dashboard Análisis 2022: estructura definida, agosto procesado (51 consultas, 27 consultantes). Pendiente: sept-dic + crear tabla |

@@ -1,0 +1,7 @@
+
+=== PLAN DE CARGA ===
+Lotes a cargar: 31-69 (índices 30-68)
+Total registros: 1939
+Registros actuales en Airtable: 1535
+Total esperado después: 3474
+Fecha: 2026-06-19T23:31:05.108Z

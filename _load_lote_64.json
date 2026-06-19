@@ -1,0 +1,456 @@
+{
+  "baseId": "appfPbIIS3UgNvOKC",
+  "tableId": "tblfohS1ZEkvFkGFw",
+  "records": [
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Kiara Yambay",
+        "fldW3yUMNQ8cdtwGW": "2026-02-18",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Sole Vazquez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-20",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Paloma Codas",
+        "fldW3yUMNQ8cdtwGW": "2026-02-25",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Mathias Franco",
+        "fldW3yUMNQ8cdtwGW": "2026-02-04",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "LUNES 9 SANDRA OVIEDO",
+        "fldW3yUMNQ8cdtwGW": "2026-02-10",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Andrea Oviedo",
+        "fldW3yUMNQ8cdtwGW": "2026-02-11",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Paloma Codas",
+        "fldW3yUMNQ8cdtwGW": "2026-02-13",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Milagros Arevalos",
+        "fldW3yUMNQ8cdtwGW": "2026-02-18",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Osvaldo Delvalle",
+        "fldW3yUMNQ8cdtwGW": "2026-02-20",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Claudia Cano",
+        "fldW3yUMNQ8cdtwGW": "2026-02-25",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "JuanMa Alonso",
+        "fldW3yUMNQ8cdtwGW": "2026-02-04",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Aileen Sarubbi",
+        "fldW3yUMNQ8cdtwGW": "2026-02-06",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "david delorme/ruth",
+        "fldW3yUMNQ8cdtwGW": "2026-02-11",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Belen Quiñonez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-13",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "carlos salinas VIIR",
+        "fldW3yUMNQ8cdtwGW": "2026-02-18",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Belen Quiñonez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-20",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Carlos salinas",
+        "fldW3yUMNQ8cdtwGW": "2026-02-25",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Adriana Quintana",
+        "fldW3yUMNQ8cdtwGW": "2026-02-04",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Carlos Salinas",
+        "fldW3yUMNQ8cdtwGW": "2026-02-11",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Adriana Quintana",
+        "fldW3yUMNQ8cdtwGW": "2026-02-13",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Adolfo Mendieta",
+        "fldW3yUMNQ8cdtwGW": "2026-02-20",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Tania Núñez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-25",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Claudia Cano",
+        "fldW3yUMNQ8cdtwGW": "2026-02-03",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Osvaldo Delvalle",
+        "fldW3yUMNQ8cdtwGW": "2026-02-10",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Jime Flores",
+        "fldW3yUMNQ8cdtwGW": "2026-02-17",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Milagros Arevalos",
+        "fldW3yUMNQ8cdtwGW": "2026-02-23",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Audrey Galeano",
+        "fldW3yUMNQ8cdtwGW": "2026-02-24",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Milagros Arevalos",
+        "fldW3yUMNQ8cdtwGW": "2026-02-03",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Victor Dominguez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-05",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Seba Ruiz Díaz",
+        "fldW3yUMNQ8cdtwGW": "2026-02-10",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Osmar Patiño",
+        "fldW3yUMNQ8cdtwGW": "2026-02-12",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Vero Valinotti*",
+        "fldW3yUMNQ8cdtwGW": "2026-02-19",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Sebas Ruiz Diaz",
+        "fldW3yUMNQ8cdtwGW": "2026-02-23",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Lourdes Martinez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-24",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Victor Arevalo",
+        "fldW3yUMNQ8cdtwGW": "2026-02-03",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Facundo Alvarez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-05",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Milagros Arevalos",
+        "fldW3yUMNQ8cdtwGW": "2026-02-10",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Facundo Alvarez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-11",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Natalia Bertolazi",
+        "fldW3yUMNQ8cdtwGW": "2026-02-12",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Sebastian Ruiz Diaz",
+        "fldW3yUMNQ8cdtwGW": "2026-02-17",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Enrique Mendoza",
+        "fldW3yUMNQ8cdtwGW": "2026-02-19",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Jime Flores",
+        "fldW3yUMNQ8cdtwGW": "2026-02-23",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Enrique Mendoza",
+        "fldW3yUMNQ8cdtwGW": "2026-02-24",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Lara Vera",
+        "fldW3yUMNQ8cdtwGW": "2026-02-03",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Alejandro Romero",
+        "fldW3yUMNQ8cdtwGW": "2026-02-05",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Eze Ramirez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-10",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Lourdes Alegre",
+        "fldW3yUMNQ8cdtwGW": "2026-02-11",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Alejandro Romero",
+        "fldW3yUMNQ8cdtwGW": "2026-02-19",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Eze Ramirez",
+        "fldW3yUMNQ8cdtwGW": "2026-02-23",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Presencial"
+      }
+    },
+    {
+      "fields": {
+        "fldsi3PWDbVMrC3Qm": "Belen Sarubbi",
+        "fldW3yUMNQ8cdtwGW": "2026-02-24",
+        "fldqq7Nb8ry0IEU9R": 2026,
+        "fldyzq91v6Jwu4y7D": "Febrero",
+        "fldVaG6ldSL2CX61V": "Virtual"
+      }
+    }
+  ]
+}

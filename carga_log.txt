@@ -1,3 +1,44 @@
-Inicio de carga de lotes a Airtable: 06/19/2026 20:21:13
+=== CARGA MASIVA DE LOTES 31-69 ===
+Base: appfPbIIS3UgNvOKC
+Tabla: tblfohS1ZEkvFkGFw
+Fecha: 2026-06-19T23:31:10.125Z
 
-Preparando para cargar  lotes con sus registros...
+Lote 31: 50 registros
+Lote 32: 50 registros
+Lote 33: 50 registros
+Lote 34: 50 registros
+Lote 35: 50 registros
+Lote 36: 50 registros
+Lote 37: 50 registros
+Lote 38: 50 registros
+Lote 39: 50 registros
+Lote 40: 50 registros
+Lote 41: 50 registros
+Lote 42: 50 registros
+Lote 43: 50 registros
+Lote 44: 50 registros
+Lote 45: 50 registros
+Lote 46: 50 registros
+Lote 47: 50 registros
+Lote 48: 50 registros
+Lote 49: 50 registros
+Lote 50: 50 registros
+Lote 51: 50 registros
+Lote 52: 50 registros
+Lote 53: 50 registros
+Lote 54: 50 registros
+Lote 55: 50 registros
+Lote 56: 50 registros
+Lote 57: 50 registros
+Lote 58: 50 registros
+Lote 59: 50 registros
+Lote 60: 50 registros
+Lote 61: 50 registros
+Lote 62: 50 registros
+Lote 63: 50 registros
+Lote 64: 50 registros
+Lote 65: 50 registros
+Lote 66: 50 registros
+Lote 67: 50 registros
+Lote 68: 50 registros
+Lote 69: 39 registros

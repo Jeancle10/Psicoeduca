@@ -1,0 +1,14 @@
+
+PLAN DE CARGA DE AIRTABLE
+=========================
+
+Lotes a cargar: 9-69 (61 lotes)
+Total registros: 3039
+Total acumulado (7-8 + 9-69): 3,139
+
+Estado actual:
+- Lote 7: CARGADO (50 registros)
+- Lote 8: CARGADO (50 registros)
+- Lotes 9-69: PENDIENTE (3039 registros)
+
+Próximo paso: Cargar todos los lotes 9-69 sin interrupción

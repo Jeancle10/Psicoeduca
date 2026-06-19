@@ -1,0 +1,455 @@
+{
+    "value":  [
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ricardo FloresT.",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-14",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Virtual"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "David Salinas",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-16",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Melanie R.T",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-21",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Virtual"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "May Pereira",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-23",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ricardo FloresT",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-28",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Virtual"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Cami Adorni",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-02",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jessi Cubas y Carmo",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-03",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Mario Santander",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-07",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Maybelinne Filippini",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-09",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Mario Santander",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-14",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Cami Adorni",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-16",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Mario Santander",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-21",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Alejandra Acosta",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-23",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Mario Santander",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-28",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Cabral",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-01",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ivonne Ortiz",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-02",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Alejandra Acosta New",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-07",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ivonne OrtizT",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-09",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Virtual"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ivonne Ortiz",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-16",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Cabral",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-21",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Hugo Lopez",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-28",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Bruno Perrota",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-02",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Hugo Depps",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-14",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Adriana Viera",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-16",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Cabral",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-17",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Cami AdorniT",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-23",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Virtual"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nicole Sarubbi",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-24",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Flores",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-30",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nicole Ortiz",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-01",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Luis Elizeche",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-03",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ricardo Ojeda",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-07",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Belen Valinotti",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-09",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nicole Sarubbi",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-10",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nicole Ortiz",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-13",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Ricardo Ojeda",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-14",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Alejandra Acosta",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-16",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nicole Sarubbi",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-17",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Aaron Brunstein",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-23",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "David Salinas",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-24",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nicole Ortiz",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-27",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Cabral",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-28",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Adri Viera",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-30",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Edu Samaniego",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-03",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Flores",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-06",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime CabralT.",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-07",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Virtual"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Edu Samaniego",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-10",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jime Flores",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-13",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Nahiara Trinidad",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-14",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Jimena Flores",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-20",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  },
+                  {
+                      "fields":  {
+                                     "fldsi3PWDbVMrC3Qm":  "Adri Viera",
+                                     "fldW3yUMNQ8cdtwGW":  "2023-03-21",
+                                     "fldqq7Nb8ry0IEU9R":  2023,
+                                     "fldyzq91v6Jwu4y7D":  "Marzo",
+                                     "fldVaG6ldSL2CX61V":  "Presencial"
+                                 }
+                  }
+              ],
+    "Count":  50
+}

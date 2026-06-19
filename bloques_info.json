@@ -1,0 +1,198 @@
+{
+  "totalBloques": 38,
+  "blocksListos": 38,
+  "baseId": "appfPbIIS3UgNvOKC",
+  "tableId": "tblfohS1ZEkvFkGFw",
+  "bloques": [
+    {
+      "numeroBloque": 1,
+      "archivo": "bloque_api_1.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 2,
+      "archivo": "bloque_api_2.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 3,
+      "archivo": "bloque_api_3.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 4,
+      "archivo": "bloque_api_4.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 5,
+      "archivo": "bloque_api_5.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 6,
+      "archivo": "bloque_api_6.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 7,
+      "archivo": "bloque_api_7.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 8,
+      "archivo": "bloque_api_8.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 9,
+      "archivo": "bloque_api_9.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 10,
+      "archivo": "bloque_api_10.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 11,
+      "archivo": "bloque_api_11.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 12,
+      "archivo": "bloque_api_12.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 13,
+      "archivo": "bloque_api_13.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 14,
+      "archivo": "bloque_api_14.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 15,
+      "archivo": "bloque_api_15.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 16,
+      "archivo": "bloque_api_16.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 17,
+      "archivo": "bloque_api_17.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 18,
+      "archivo": "bloque_api_18.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 19,
+      "archivo": "bloque_api_19.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 20,
+      "archivo": "bloque_api_20.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 21,
+      "archivo": "bloque_api_21.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 22,
+      "archivo": "bloque_api_22.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 23,
+      "archivo": "bloque_api_23.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 24,
+      "archivo": "bloque_api_24.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 25,
+      "archivo": "bloque_api_25.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 26,
+      "archivo": "bloque_api_26.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 27,
+      "archivo": "bloque_api_27.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 28,
+      "archivo": "bloque_api_28.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 29,
+      "archivo": "bloque_api_29.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 30,
+      "archivo": "bloque_api_30.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 31,
+      "archivo": "bloque_api_31.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 32,
+      "archivo": "bloque_api_32.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 33,
+      "archivo": "bloque_api_33.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 34,
+      "archivo": "bloque_api_34.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 35,
+      "archivo": "bloque_api_35.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 36,
+      "archivo": "bloque_api_36.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 37,
+      "archivo": "bloque_api_37.json",
+      "listo": true
+    },
+    {
+      "numeroBloque": 38,
+      "archivo": "bloque_api_38.json",
+      "listo": true
+    }
+  ]
+}

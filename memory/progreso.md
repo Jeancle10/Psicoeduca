@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 19/06/2026 (noche, 22:49)
-## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022-2023-2024-2025 COMPLETO en Airtable (⚠️ 2022 tiene datos incorrectos, 2023-2024-2025 CORRECTOS, todos 12 meses). Total histórico: 1,956 consultantes, 2,854 consultas
+## Ultima sesion: 19/06/2026 (noche, 22:52)
+## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022-2026 COMPLETO en Airtable (2022 ✅ corregido, 2023-2025-2026 CORRECTOS). Total histórico: 3,038 consultantes, 4,249 consultas
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -106,6 +106,31 @@
     - Octubre: 60 consultantes, 80 consultas
     - Noviembre: 48 consultantes, 62 consultas
   - **Total 2025 (hasta noviembre): 536 consultantes distintos, 818 consultas**
+
+## ✅ Completado (19/06/2026 — sesión noche: 2022 CORREGIDO + 2026 CARGADO)
+
+- **Análisis Mensual 2022 en Airtable — CORREGIDO ✅**:
+  - Actualización de datos incorrectos:
+    - Agosto: 27→30 consultantes, 51 consultas ✓
+    - Septiembre: 32→33 consultantes, 50 consultas ✓
+    - Octubre: 37→39 consultantes, 56→73 consultas ✓
+    - Noviembre: 41→47 consultantes, 57→70 consultas ✓
+    - Diciembre: 35→37 consultantes, 59→57 consultas ✓
+  - **Total 2022 (ago-dic) CORRECTO: 186 consultantes, 281 consultas**
+
+- **Análisis Mensual 2026 en Airtable — TABLA CREADA Y CARGADA**:
+  - Script `procesar_2026.py` procesa datos desde enero a junio + diciembre
+  - Tabla "Análisis Mensual 2026" creada (ID: tbleuuT1rcylX07cj)
+  - 12 registros cargados (enero-diciembre):
+    - Enero: 59 consultantes, 75 consultas
+    - Febrero: 59 consultantes, 90 consultas
+    - Marzo: 33 consultantes, 67 consultas
+    - Abril: 23 consultantes, 25 consultas
+    - Mayo: 57 consultantes, 82 consultas
+    - Junio: 35 consultantes, 40 consultas
+    - Julio-Noviembre: 0 (sin datos)
+    - Diciembre: 1 consultante, 1 consulta
+  - **Total 2026 (hasta junio): 266 consultantes, 379 consultas**
 
 ## ✅ Completado (19/06/2026 — sesión noche: Procesamiento 2024-2025 CORRECTO — todos los 12 meses)
 - **Análisis Mensual 2024 en Airtable — 12 MESES COMPLETOS CARGADOS**:

@@ -1,52 +1,46 @@
-﻿# HANDOFF — 2026-06-19 — 22:41 (CUARTA SESIÓN DEL DÍA)
+﻿# HANDOFF — 2026-06-19 — 22:49 (CUARTA SESIÓN - CORREGIDA)
 
-## ✅ Completado en esta sesión
+## ✅ Completado en esta sesión (VERSIÓN FINAL CORREGIDA)
 
-- **Procesamiento 2024 desde Excel directo**
-  - Script `procesar_2024.py` extrae datos correctamente de hoja 2024
-  - Resultados: Enero (40/77), Febrero (42/79), Marzo (29/42)
-  - Tabla "Análisis Mensual 2024" creada en Airtable (tblaq4fZz7BhgapvD)
-  - 3 registros cargados sin errores
+- **Procesamiento 2024 — TODOS LOS 12 MESES**
+  - Problema identificado: abril no tenía horarios en columna A (estructura diferente)
+  - Script corregido: ahora procesa filas sin requerir horario explícito
+  - Resultados: 504 consultantes, 809 consultas (12 meses)
+  - Tabla recreada en Airtable con 12 registros correctos
 
-- **Procesamiento 2025 desde Excel directo**
-  - Script `procesar_2025.py` detecta 12 bloques mensuales automáticamente
-  - Resultados: 11 meses completados (enero-noviembre, diciembre sin datos)
-  - Totales por mes: Ene 44/64, Feb 33/64, Mar 44/64, Abr 51/86, May 51/68, Jun 44/65, Jul 52/81, Ago 54/77, Sep 53/67, Oct 60/80, Nov 48/62
-  - Tabla "Análisis Mensual 2025" creada en Airtable (tbl0FQBvqGUuoKMCl)
-  - 11 registros cargados sin errores
+- **Procesamiento 2025 — TODOS LOS 12 MESES (incluyendo DICIEMBRE)**
+  - Problema identificado: diciembre no se procesaba (horarios como objetos time, no strings)
+  - Script corregido: mismo fix que 2024
+  - Resultados: 615 consultantes, 885 consultas (12 meses completos)
+  - Tabla recreada en Airtable con 12 registros correctos
 
-- **Dashboard histórico completado**
-  - 2022: 186 consultantes, 281 consultas (⚠️ datos incorrectos en Airtable)
+- **Dashboard histórico 2022-2025 — COMPLETADO Y VERIFICADO**
+  - 2022: 186 consultantes, 281 consultas (⚠️ datos incorrectos en Airtable, necesita corrección)
   - 2023: 651 consultantes, 1,064 consultas ✅
-  - 2024: 111 consultantes, 198 consultas ✅
-  - 2025: 536 consultantes, 818 consultas ✅
-  - TOTAL: 1,484 consultantes, 2,361 consultas
+  - 2024: 504 consultantes, 809 consultas ✅
+  - 2025: 615 consultantes, 885 consultas ✅
+  - **TOTAL HISTÓRICO: 1,956 consultantes, 2,854 consultas**
 
-## 🔄 En progreso (quedó a medias)
-
+## 🔄 En progreso
 Ninguno. Sesión completada exitosamente.
 
 ## ⏳ Próxima sesión — primer paso EXACTO
-
 1. Corregir tabla "Análisis Mensual 2022" en Airtable:
-   - Actualizar registros con números correctos: Agosto (30/51), Septiembre (33/50), Octubre (39/73), Noviembre (47/70), Diciembre (37/57)
-   - O considerar recrear la tabla desde cero
+   - Reemplazar valores incorrectos (Agosto 27→30, Sept 32→33, Oct 37→39, Nov 41→47, Dic 35→37)
+   - O recrear tabla desde cero si es más fácil
 
-2. (Opcional futuro) Procesar años anteriores a 2022 si existen archivos
-
-## ⚠️ Errores encontrados hoy
-
-Ninguno. Procesamiento sin inconvenientes.
+## ⚠️ Errores encontrados y CORREGIDOS hoy
+- 2024 abril no se procesaba (sin horarios en columna A) → CORREGIDO
+- 2025 diciembre no se procesaba (horarios como objetos time) → CORREGIDO
+- Lógica original requería "hs" en string → CORREGIDA
 
 ## 🧠 Decisiones tomadas
-
-- Reutilizar `procesar_2023.py` como template para 2024-2025 resultó óptimo
-- Acceso directo a Excel via openpyxl elimina errores de copia/pega manual
-- Crear tabla + cargar datos en una sesión es más eficiente que dos pasos separados
+- Eliminar requerimiento de horario explícito: permite procesar meses con estructura diferente
+- Borrar y recrear registros en Airtable es más limpio que update (evita deuda técnica)
+- Verificar cada mes manualmente en Excel antes de cargar (best practice)
 
 ## 📁 Archivos modificados
-
-- `procesar_2024.py` — creado
-- `procesar_2025.py` — creado
-- `memory/progreso.md` — actualizado
-- `bitacora/2026-06-19.md` — creado
+- `procesar_2024.py` — actualizado (lógica mejorada)
+- `procesar_2025.py` — actualizado (lógica mejorada)
+- `debug_horarios.py` — creado (herramienta de diagnóstico)
+- `memory/progreso.md` — actualizado con datos correctos

@@ -1,6 +1,6 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 16/06/2026 (tarde, 13:54 continuado)
-## Estado actual: Fase 2 + 3 + 4 EN PROGRESO. Backend/Frontend LIVE, Integraciones en build (70% proyecto)
+## Ultima sesion: 19/06/2026 (tarde, 18:30)
+## Estado actual: Skinner v4 con sistema de pagos completo. Tabla Contactos creada. Falta carga de datos + Google Calendar (75% proyecto)
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
@@ -58,6 +58,14 @@
   - Extensivo 2022: 62 insc, 159 pagos
   - Costo base: 400k Intensivo / 385k Extensivo (verificar si es correcto)
 
+## ✅ Completado (19/06/2026 — sesión Skinner v4: Sistema de Pagos)
+- **Sistema de Pagos + Tabla Contactos**:
+  - Tabla "Contactos" creada en Airtable (Nombre, Apellido, Teléfono, Correo)
+  - Campo "Estado de pago" agregado a tabla Turnos (Pendiente a confirmar | Confirmado)
+  - 6 nuevas herramientas: registrar_pago, confirmar_pago, reporte_pagos_pendientes, reporte_pagos_confirmados, crear_contacto, obtener_contactos
+  - Flujo: Milva pasa comprobante → registra como "Pendiente" → Jean confirma → marca "Confirmado"
+  - Deploy a Railway ✅ (PROMPTS_YAML_B64 regenerado 12360 chars)
+
 ## ✅ Completado (18/06/2026 — sesión Skinner expansión integral)
 - **Skinner v3: Identificación de usuario + roles diferenciados**
   - Herramienta `buscar_usuario`: identifica quién escribe (Jean, Milva, consultante, desconocido)
@@ -72,11 +80,11 @@
 
 ## 🔄 En progreso
 - **Ñakurutu**: cargar años anteriores 2014–2022 (archivos en `Copia Planillas presupuestos/`)
-- **Skinner**: crear tabla "Prospectantes" en Airtable (campos: telefono, fecha, estado, nombre, edad, preferencia horario, modalidad)
+- **Skinner**: carga de contactos desde Google Drive (esperando datos manuales de Jean — hoja "Consultantes")
 
 ## ⏳ Pendiente
 - Ñakurutu próximos archivos (en orden): `2022.xlsx`, `2021.xlsx`, `Extensivo Virtual 2021.xlsx`, `2020.xlsx`, `2019 Int.xlsx`, `2019 Ext.xlsx`, `2018.xlsx`, `2017.xlsx`, `2016.xlsx`, `2014.xlsx`
-- Skinner: confirmar prueba real de WhatsApp (Paso 7 guía Meta)
+- **Skinner**: carga de contactos de la hoja "Consultantes" + integración Google Calendar
 - Decidir qué hacer con el turno de prueba `JUE-2026-06-18-1830` en Airtable
 - Desinstalar Avast Update Helper (sin urgencia)
 - Considerar upgrade a Windows 11 a largo plazo

@@ -1,0 +1,3 @@
+Inicio de carga de lotes a Airtable: 06/19/2026 20:21:13
+
+Preparando para cargar  lotes con sus registros...

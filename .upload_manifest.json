@@ -1,0 +1,10 @@
+{
+  "base_id": "appfPbIIS3UgNvOKC",
+  "table_id": "tblfohS1ZEkvFkGFw",
+  "total_records": 3289,
+  "batch_size": 50,
+  "total_batches": 66,
+  "lotes_combinados": "3-68",
+  "lote_2_cargado": true,
+  "lote_2_records": 50
+}

@@ -1,0 +1,135 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "buscar_consultas_por_nombre",
+        "description": "Busca todas las consultas históricas de un consultante por su nombre. Retorna lista con fechas, años, meses y modalidades.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nombre": {
+              "type": "string",
+              "description": "Nombre o parte del nombre del consultante (búsqueda insensible a mayúsculas)"
+            }
+          },
+          "required": ["nombre"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "contar_consultas_por_año",
+        "description": "Cuenta la cantidad de consultas de un consultante por año. Si no se especifica año, retorna totales por cada año.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nombre": {
+              "type": "string",
+              "description": "Nombre del consultante"
+            },
+            "año": {
+              "type": "integer",
+              "description": "Año específico (2022-2026). Opcional. Si no se da, retorna todos los años."
+            }
+          },
+          "required": ["nombre"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "última_consulta",
+        "description": "Retorna la fecha y detalles de la última consulta registrada de un consultante",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nombre": {
+              "type": "string",
+              "description": "Nombre del consultante"
+            }
+          },
+          "required": ["nombre"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "próxima_consulta",
+        "description": "Busca la próxima consulta agendada de un consultante en el calendario de turnos",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nombre": {
+              "type": "string",
+              "description": "Nombre del consultante"
+            }
+          },
+          "required": ["nombre"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "consultas_en_mes",
+        "description": "Retorna estadísticas de un mes específico: total de consultas, consultantes distintos, virtual vs presencial",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "año": {
+              "type": "integer",
+              "description": "Año (2022-2026)"
+            },
+            "mes": {
+              "type": "string",
+              "description": "Nombre del mes (Enero, Febrero, Marzo, etc.)"
+            }
+          },
+          "required": ["año", "mes"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "consultantes_más_activos",
+        "description": "Retorna ranking de consultantes con más consultas. Puede filtrar por año específico.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "año": {
+              "type": "integer",
+              "description": "Año específico (2022-2026). Opcional. Si no se da, usa todos los años."
+            },
+            "top": {
+              "type": "integer",
+              "description": "Cantidad de consultantes a retornar (default: 10)"
+            }
+          },
+          "required": []
+        }
+      }
+    }
+  ],
+  "instrucciones": {
+    "cuándo_usar": [
+      "Cuando alguien pregunte sobre el histórico de consultas de un consultante",
+      "Cuando pregunten 'cuántas consultas' o 'cuándo fue la última consulta'",
+      "Cuando pidan datos de un mes específico",
+      "Cuando busquen estadísticas o rankings"
+    ],
+    "ejemplos_preguntas": [
+      "¿Cuántas consultas tuvo Mayra?",
+      "Historial de Adri Zacarias",
+      "¿Cuántas consultas de Juan en 2022?",
+      "¿Cuándo fue la última consulta de Mayra?",
+      "¿Cuándo viene Adri?",
+      "Estadísticas de junio 2026",
+      "¿Quiénes fueron los más activos este año?"
+    ]
+  }
+}

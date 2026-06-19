@@ -1,0 +1,7 @@
+﻿Inicio de carga: 06/19/2026 20:18:51
+Progreso: 14.4927536231884% - Registros: 500
+Progreso: 28.9855072463768% - Registros: 1000
+Progreso: 43.4782608695652% - Registros: 1500
+Progreso: 57.9710144927536% - Registros: 2000
+Progreso: 72.463768115942% - Registros: 2500
+Progreso: 86.9565217391304% - Registros: 3000

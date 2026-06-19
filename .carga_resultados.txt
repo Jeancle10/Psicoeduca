@@ -1,0 +1,2 @@
+﻿=== RESULTADOS DE CARGA A AIRTABLE ===
+Lote 0: OK - 50 registros (cargado manualmente)

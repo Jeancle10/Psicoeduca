@@ -1,0 +1,419 @@
+{
+    "registrosCargados":  0,
+    "tableId":  "tblfohS1ZEkvFkGFw",
+    "lotesCargados":  0,
+    "baseId":  "appfPbIIS3UgNvOKC",
+    "lotes":  [
+                  {
+                      "numero":  2,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  3,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  4,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  5,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  6,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  7,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  8,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  9,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  10,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  11,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  12,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  13,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  14,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  15,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  16,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  17,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  18,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  19,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  20,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  21,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  22,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  23,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  24,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  25,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  26,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  27,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  28,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  29,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  30,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  31,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  32,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  33,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  34,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  35,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  36,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  37,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  38,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  39,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  40,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  41,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  42,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  43,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  44,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  45,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  46,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  47,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  48,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  49,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  50,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  51,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  52,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  53,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  54,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  55,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  56,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  57,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  58,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  59,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  60,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  61,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  62,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  63,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  64,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  65,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  66,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  67,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  68,
+                      "registros":  50,
+                      "error":  null,
+                      "cargado":  false
+                  },
+                  {
+                      "numero":  69,
+                      "registros":  39,
+                      "error":  null,
+                      "cargado":  false
+                  }
+              ],
+    "errores":  [
+
+                ]
+}

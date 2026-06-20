@@ -1,6 +1,49 @@
 # 📊 Progreso — psicoeduca
-## Ultima sesion: 19/06/2026 (noche, 23:25)
-## Estado actual: Skinner v4 con sistema de pagos completo. 151 contactos cargados. Dashboard 2022-2026 COMPLETO en Airtable (2022 ✅ corregido, 2023-2025-2026 CORRECTOS). Total histórico: 3,038 consultantes, 4,249 consultas
+## Ultima sesion: 20/06/2026 (tarde, 14:57)
+## Estado actual: Skinner v5 con 6 herramientas de consultas históricas + estadísticas cancelaciones. 3,439 consultas cargadas (2022-2026). 91 cancelaciones detectadas. Campo "Estado" en Airtable listo.
+
+## ✅ Completado (20/06/2026 — sesión tarde: Skinner v5 - Herramientas de Consultas Históricas)
+
+### Cancelaciones y Estadísticas
+- ✅ **91 cancelaciones detectadas** (2.6% del total 3,439 consultas)
+  - 2023: 11 (1.0%)
+  - 2024: 14 (1.6%)
+  - 2025: 50 (5.4%) ← AÑO CON MÁS CANCELACIONES
+  - 2026: 16 (3.8%)
+- ✅ Método de detección: strikethrough en Excel (openpyxl Font.strike property)
+- ✅ Documentación: `memory/cancelaciones.md`, `knowledge/estadisticas-cancelaciones.md`
+
+### Integración en Airtable
+- ✅ Campo **"Estado"** creado (fld2TGfK5DeNJ9XR8)
+  - Tipo: singleSelect
+  - Opciones: "Realizado", "Cancelado"
+- ✅ Knowledge base actualizado con resumen por año
+
+### 6 Herramientas de Skinner Integradas
+**Archivos**: `agent/tools/consultas_historicas.py`, `agent/tools/airtable.py` (modificado)
+
+#### Las 6 herramientas funcionales:
+1. **buscar_consultas_por_nombre(nombre)** → Historial completo (fechas, modalidades, estados)
+2. **contar_consultas_por_año(nombre, año?)** → Desglose por año (realizadas vs canceladas)
+3. **última_consulta(nombre)** → Fecha de última consulta
+4. **próxima_consulta(nombre)** → Próxima cita agendada en calendario
+5. **consultas_en_mes(año, mes)** → Estadísticas mensuales (total, presencial/virtual, tasa cancelación)
+6. **consultantes_más_activos(año?, top?)** → Ranking de consultantes
+
+#### Ejemplos de uso:
+- Usuario: "¿Cuántas consultas tuvo Juan?" → Claude elige `buscar_consultas_por_nombre("Juan")`
+- Usuario: "Estadísticas de Junio 2025" → Claude elige `consultas_en_mes(2025, "Junio")`
+- Usuario: "Top 10 consultantes del 2024" → Claude elige `consultantes_más_activos(2024, 10)`
+
+### Documentación
+- ✅ `config/prompts.yaml` actualizado con instrucciones para cada herramienta
+- ✅ `tools/consultas_airtable.py` con definiciones de tools (copias, no funcionales)
+- ✅ Commit: "feat: 6 herramientas de consultas históricas + estadísticas cancelaciones"
+
+### Estado Airtable
+- Base: `appfPbIIS3UgNvOKC`
+- Tabla "Consultas Histórico" (tblfohS1ZEkvFkGFw): 3,439 registros
+- Tabla "Turnos" (tblaeQco2NuB9vkMa): próximas citas
 
 ## ✅ Completado
 - Skinner desplegado en producción: `https://psicoeduca-agente-production.up.railway.app`
